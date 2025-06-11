@@ -355,6 +355,13 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.skill-card img{
+  
+  height: 60%;
+  width: 60%;
+  margin-bottom: 0.6rem;
+}
+
 .skill-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 15px rgba(0, 255, 238, 0.1);
