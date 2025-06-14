@@ -2,334 +2,616 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D'Crepes Cafe Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
 
-  <!-- Scroll Behavior Smooth -->
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-    }
-    
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      overflow-x: hidden;
-    }
+    <link rel="stylesheet" href="style.css">
 
-    #preloader {
-      transition: opacity 0.5s ease;
-    }
+    <!-- ICONS -->
 
-    /* Enhanced mobile responsiveness */
-    @media (max-width: 640px) {
-      .hero-title {
-        font-size: 2rem !important;
-      }
-      
-      .hero-subtitle {
-        font-size: 1rem !important;
-      }
-      
-      .nav-menu {
-        display: none;
-      }
-      
-      .mobile-menu-btn {
-        display: block;
-      }
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    @media (max-width: 480px) {
-      .hero-title {
-        font-size: 1.75rem !important;
-      }
-      
-      .section-title {
-        font-size: 1.875rem !important;
-      }
-    }
 
-    @media (max-width: 360px) {
-      .hero-title {
-        font-size: 1.5rem !important;
-      }
-      
-      .section-title {
-        font-size: 1.5rem !important;
-      }
-    }
+    <!-- AOS JS (FOR SCROLL ANIMATION) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-    /* Mobile menu styles */
-    .mobile-menu {
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
-    }
-    
-    .mobile-menu.active {
-      transform: translateX(0);
-    }
-  </style>
 
-  <!-- AOS Library CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- SOCIAL MEDIA LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+    <!-- FEVICON (BROWSER ICON  )-->
+
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+    <!-- FAVICON (Browser Icon) -->
+    <!-- <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" /> -->
+
+
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="faviconn.png" sizes="32x32">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconn.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="faviconn.png">
+    <link rel="apple-touch-icon" href="faviconn.png">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SEO TAGS -->
+
+    <!-- Primary Meta Tags -->
+    <title>Navneet Verma | Frontend Developer</title>
+    <meta name="title" content="Navneet Verma | Frontend Developer">
+    <meta name="description"
+        content="I'm a frontend developer who builds clean, modern websites using HTML, CSS & JavaScript.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://navneetvermaaa.github.io/Portfolio/">
+    <meta property="og:title" content="Navneet Verma | Frontend Developer">
+    <meta property="og:description" content="I'm a frontend developer who builds clean, modern websites.">
+    <meta property="og:image" content="https://navneetvermaaa.github.io/Portfolio/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://navneetvermaaa.github.io/Portfolio/">
+    <meta property="twitter:title" content="Navneet Verma | Frontend Developer">
+    <meta property="twitter:description" content="I'm a frontend developer who builds clean, modern websites.">
+    <meta property="twitter:image" content="https://navneetvermaaa.github.io/Portfolio/preview.png">
+
+
+
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6Z8TFTZPS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P6Z8TFTZPS');
+    </script>
+
+
+
 </head>
 
-<body class="bg-gray-950 text-gray-100 w-full max-w-full">
+<body>
 
-  <!-- Preloader -->
-  <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-950">
-    <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-orange-500 border-opacity-50"></div>
-  </div>
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 right-0 z-40 w-full shadow-md bg-gray-900 text-gray-100 px-4 sm:px-6 py-4 flex justify-between items-center">
-    <div class="text-xl font-bold">D'Crepes</div>
-    
-    <!-- Desktop Menu -->
-    <ul class="nav-menu hidden sm:flex gap-4 lg:gap-6 text-base lg:text-lg">
-      <li><a href="#" class="hover:text-orange-500 transition duration-300">Home</a></li>
-      <li><a href="#menu" class="hover:text-orange-500 transition duration-300">Menu</a></li>
-      <li><a href="#about" class="hover:text-orange-500 transition duration-300">About</a></li>
-      <li><a href="#contact" class="hover:text-orange-500 transition duration-300">Contact</a></li>
-    </ul>
+    <header class="site-header ">
 
-    <!-- Mobile Menu Button -->
-    <button class="mobile-menu-btn sm:hidden text-2xl" onclick="toggleMobileMenu()">
-      ☰
-    </button>
-  </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-64 h-full bg-gray-900 z-30 sm:hidden">
-    <div class="pt-20 px-6">
-      <ul class="space-y-6 text-lg">
-        <li><a href="#" class="block hover:text-orange-500 transition duration-300" onclick="closeMobileMenu()">Home</a></li>
-        <li><a href="#menu" class="block hover:text-orange-500 transition duration-300" onclick="closeMobileMenu()">Menu</a></li>
-        <li><a href="#about" class="block hover:text-orange-500 transition duration-300" onclick="closeMobileMenu()">About</a></li>
-        <li><a href="#contact" class="block hover:text-orange-500 transition duration-300" onclick="closeMobileMenu()">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+        <div class="container">
 
-  <!-- Mobile Menu Overlay -->
-  <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 sm:hidden opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeMobileMenu()"></div>
+            <h1 class="logo">Navneet</h1>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen bg-cover bg-center flex items-center justify-center text-center text-white px-4"
-    data-aos="fade-up"
-    style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80');">
-    <div class="bg-black/60 p-4 sm:p-6 lg:p-8 rounded-xl max-w-xl w-full mx-4">
-      <h1 class="hero-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
-        Welcome to D'Crepes Cafe
-      </h1>
-      <p class="hero-subtitle text-sm sm:text-base md:text-lg lg:text-xl mb-6">
-        Crafted coffee. Warm vibes. Bold flavors.
-      </p>
-      <a href="#menu"
-        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full transition duration-300 text-sm sm:text-base">
-        Explore Our Menu
-      </a>
-    </div>
-  </section>
-
-  <!-- Menu Section -->
-  <section id="menu" class="py-12 sm:py-16 bg-gray-800" data-aos="fade-right">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-100">Our Signature Menu</h2>
-
-      <div class="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Item 1 - Fixed Nutella Crepe Image -->
-        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=400&q=80" alt="Classic Nutella Crepe"
-            class="w-full h-48 object-cover transform transition duration-300 hover:scale-105">
-          <div class="p-4">
-            <h3 class="text-lg sm:text-xl font-semibold mb-2">Classic Nutella Crepe</h3>
-            <p class="text-gray-400 mb-2 text-sm sm:text-base">Rich Nutella filling with fresh banana slices.</p>
-            <span class="text-orange-500 font-bold text-lg">₹180</span>
-          </div>
         </div>
 
-        <!-- Item 2 -->
-        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" alt="Caramel Latte"
-            class="w-full h-48 object-cover transform transition duration-300 hover:scale-105">
-          <div class="p-4">
-            <h3 class="text-lg sm:text-xl font-semibold mb-2">Caramel Latte</h3>
-            <p class="text-gray-400 mb-2 text-sm sm:text-base">Smooth espresso with a hint of caramel & steamed milk.</p>
-            <span class="text-orange-500 font-bold text-lg">₹120</span>
-          </div>
+
+        <nav class="navbar ">
+
+            <ul class="nav-links">
+
+                <li><a href="#home" class="active">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#skill">Skill</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <!-- SECTION  -->
+
+    <section class="hero " id="home" data-aos="zoom-out-down">
+
+        <!-- <div class="img">
+            <img src="6.jpg" alt="">
+        </div> -->
+
+        <div class="hero-content">
+
+            <h1>Hello! I am <span>Navneet</span></h1>
+
+            <p>A passionate Frontend Developer crafting beautiful web experiences.</p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">View Projects</a>
+
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ABOUT ME SECTION  -->
+
+    <section class="about " id="about" data-aos="fade-up">
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I'm Navneet, a frontend web developer with a passion for creating beautiful and functional websites.
+                    <br> <br>
+                    I specialize in turning ideas into interactive digital experiences using HTML, CSS, and JavaScript.
+                    <br> <br>
+                </p>
+                <p>
+                    My goal is to deliver visually impressive and responsive designs that leave a lasting impression.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="myimg2.jpg" alt="Navneet">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- PROJECTS SECTION  -->
+
+    <section class="projects " id="projects" data-aos="fade-up">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+
+
+                <!-- INSTEAD OF THIS  -->
+
+
+                <!-- <img src="https://picsum.photos/300/200" alt="placeholder" />
+
+                <h3>Project 1</h3>
+                <p>Responsive e-commerce product filter page using HTML, CSS & JS.</p>
+                
+                <a href="#"  class="project-btn" target="_blank">View Project</a > -->
+
+
+
+
+
+
+
+
+                <!-- THIS- MY PROJECTS  -->
+
+                <img src="PRJCT1.png" />
+
+                <h3>Project 1</h3>
+                <p>Crazy 3D Rotation Effect Using CSS Only.</p>
+                <p>(This site is only responsive for PC)</p>
+
+                <a href="https://navneetvermaaa.github.io/project1/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+            </div>
+
+            <div class="project-card">
+
+
+
+
+
+                <!-- INSTEAD OF THIS  -->
+
+                <!-- <img src="https://picsum.photos/400/300" alt="placeholder" />
+
+
+                <h3>Project 2</h3>
+                <p>Personal blog layout with scroll animations and theme switcher.</p>
+                <a href="#" class="project-btn" target="_blank">View Project</a> -->
+
+
+
+
+
+
+
+
+                <!-- THIS- MY PROJECTS  -->
+
+                <img src="PRJCT2.png" />
+
+
+                <h3>Project 2</h3>
+                <p>Crazy Scroll Animation Using CSS Only.</p>
+                <p>(This site is only responsive for PC)</p>
+                <a href="https://navneetvermaaa.github.io/project2/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
+
+
+            </div>
+
+            <div class="project-card">
+
+
+
+                <!-- INSTEAD OF THIS  -->
+
+
+                <!-- <img src="https://picsum.photos/600/400" alt="placeholder" />
+
+                <h3>Project 3</h3>
+                <p>Modern restaurant landing page with custom navigation.</p>
+                <a href="#" class="project-btn" target="_blank">View Project</a> -->
+
+
+
+
+
+
+
+
+                <!-- THIS- MY PROJECTS  -->
+
+                <img src="PRJCT3.png" />
+
+                <h3>Project 3</h3>
+                <p>Stunning HTML & CSS Card Animation.</p>
+                <p>(This site is only responsive for PC)</p>
+                <a href="https://navneetvermaaa.github.io/project3/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
+            </div>
+
+
+            <div class="project-card">
+
+
+
+                <!-- INSTEAD OF THIS  -->
+
+
+                <!-- <img src="https://picsum.photos/600/400" alt="placeholder" />
+
+                <h3>Project 3</h3>
+                <p>Modern restaurant landing page with custom navigation.</p>
+                <a href="#" class="project-btn" target="_blank">View Project</a> -->
+
+
+
+
+
+
+
+
+                <!-- THIS- MY PROJECTS  -->
+
+                <img src="PRJCT4.png" />
+
+                <h3>Project 4</h3>
+                <p>Burger King Landing Page.</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://navneetvermaaa.github.io/project4/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
+            </div>
+
+
+
+            <div class="project-card">
+
+
+
+                <!-- INSTEAD OF THIS  -->
+
+
+                <!-- <img src="https://picsum.photos/600/400" alt="placeholder" />
+
+                <h3>Project 3</h3>
+                <p>Modern restaurant landing page with custom navigation.</p>
+                <a href="#" class="project-btn" target="_blank">View Project</a> -->
+
+
+
+
+
+
+
+
+                <!-- THIS- MY PROJECTS  -->
+
+                <img src="PRJCT5.png" />
+
+                <h3>Project 5</h3>
+                <p>Boostify | Digital Marketing Solution. <br> <br> LANDING PAGE</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://navneetvermaaa.github.io/project5/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="project-card">
+
+
+
+                <!-- INSTEAD OF THIS  -->
+
+
+                <!-- <img src="https://picsum.photos/600/400" alt="placeholder" />
+
+                <h3>Project 3</h3>
+                <p>Modern restaurant landing page with custom navigation.</p>
+                <a href="#" class="project-btn" target="_blank">View Project</a> -->
+
+
+
+
+
+
+
+
+                <!-- THIS- MY PROJECTS  -->
+
+                <img src="PRJCT6.png" />
+
+                <h3>Project 6</h3>
+                <p>D'Crepes Cafe.</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://navneetvermaaa.github.io/project6/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
+            </div>
+
+
         </div>
 
-        <!-- Item 3 -->
-        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden">
-          <img src="Belgian Waffle Delight.jpg" alt="Belgian Waffle"
-            class="w-full h-48 object-cover transform transition duration-300 hover:scale-105">
-          <div class="p-4">
-            <h3 class="text-lg sm:text-xl font-semibold mb-2">Belgian Waffle Delight</h3>
-            <p class="text-gray-400 mb-2 text-sm sm:text-base">Crispy waffle topped with chocolate sauce and ice cream.</p>
-            <span class="text-orange-500 font-bold text-lg">₹220</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-12 sm:py-16 bg-gray-900" data-aos="zoom-in-down">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 sm:gap-10">
-      <div class="w-full md:w-1/2">
-        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Cafe Interior"
-          class="w-full h-48 sm:h-64 object-cover rounded-xl transform transition duration-300 hover:scale-105">
-      </div>
-      <div class="w-full md:w-1/2 text-center md:text-left">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-100 mb-4">Our Story</h2>
-        <p class="text-gray-400 mb-6 text-sm sm:text-base">
-          At D'Crepes Cafe, every cup and every crepe is a crafted moment. From handpicked ingredients to the cozy
-          ambiance, we serve more than food—we serve memories.
-        </p>
-        <a href="#contact"
-          class="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full transition duration-300 font-semibold text-sm sm:text-base">
-          Visit Us Today
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Testimonials Section -->
-  <section class="py-12 sm:py-16 bg-gray-800" data-aos="zoom-in-left">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold text-gray-100 mb-8 sm:mb-12">What Our Customers Say</h2>
 
-      <div class="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Testimonial 1 - Fixed missing image -->
-        <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80" alt="Ananya R."
-            class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
-          <p class="text-gray-400 italic mb-2 text-sm sm:text-base">"Best crepes I've ever had! Cozy place and lovely staff."</p>
-          <h4 class="text-orange-500 font-semibold">Ananya R.</h4>
-        </div>
 
-        <!-- Testimonial 2 -->
-        <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Kunal M."
-            class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
-          <p class="text-gray-400 italic mb-2 text-sm sm:text-base">"Aromatic coffee and perfect vibes for work and chill."</p>
-          <h4 class="text-orange-500 font-semibold">Kunal M.</h4>
-        </div>
 
-        <!-- Testimonial 3 -->
-        <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md md:col-span-2 lg:col-span-1">
-          <img src="img3.png" alt="Priya S."
-            class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
-          <p class="text-gray-400 italic mb-2 text-sm sm:text-base">"I keep coming back for the waffles! Highly recommend."</p>
-          <h4 class="text-orange-500 font-semibold">Priya S.</h4>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-12 sm:py-16 bg-gray-900" data-aos="zoom-out-up">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-100 mb-8 sm:mb-12">Get in Touch</h2>
-      <div class="grid gap-8 sm:gap-12 grid-cols-1 md:grid-cols-2">
-        <!-- Contact Info -->
-        <div class="text-center md:text-left">
-          <h3 class="text-xl sm:text-2xl font-semibold mb-4">Visit Us</h3>
-          <p class="text-gray-400 mb-2 text-sm sm:text-base">📍 123 Cafe Street, Your City</p>
-          <p class="text-gray-400 mb-2 text-sm sm:text-base">📞 +91 9876543210</p>
-          <p class="text-gray-400 mb-2 text-sm sm:text-base">✉️ contact@dcrepescafe.com</p>
-          <p class="text-gray-400 text-sm sm:text-base">🕒 Mon - Sun: 8am - 10pm</p>
+
+
+    <!-- SKILLS SECTION  -->
+
+    <section class="skills " id="skill" data-aos="fade-up">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+
+
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+
+
+            <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+            
+            <div class="skill-card">
+                <img src="tailwind.png" alt="">
+                <p>Tailwind CSS</p>
+            </div>
+
+
+            <!-- <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div> -->
+
+
+            <!-- <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+            </div> -->
+
+
         </div>
 
-        <!-- Contact Form -->
-        <form class="space-y-4">
-          <input type="text" placeholder="Your Name"
-            class="w-full p-2 sm:p-3 border border-gray-600 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base">
-          <input type="email" placeholder="Your Email"
-            class="w-full p-2 sm:p-3 border border-gray-600 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base">
-          <textarea rows="4" placeholder="Your Message"
-            class="w-full p-2 sm:p-3 border border-gray-600 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm sm:text-base resize-none"></textarea>
-          <button type="submit"
-            class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition duration-300 w-full sm:w-auto text-sm sm:text-base">
-            Send Message
-          </button>
+    </section>
+
+
+
+
+    <!-- CONTACT SECTIONS -->
+
+    <section class="contact " id="contact" data-aos="fade-up">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="contact-text">Have a project in mind or just want to say hello? Fill out the form below!</p>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xblydgar" method="POST">
+
+            <input name="name" type="text" placeholder="Your Name" required>
+
+            <input name="e-mail" type="email" placeholder="Your Email" required>
+
+            <input name="Mobile no." type="tel" placeholder=" Your Mobile no." required>
+            
+            <textarea  name="message" placeholder="Your Message" rows="6" required></textarea>
+
+            <input type="text" name="_gotcha" style="display:none"> <!-- spam protection -->
+
+            <button type="submit">Send Message</button>
+
+            <p id="formSuccess" style="display: none; color: #00ffee; margin-top: 1rem;"></p>
         </form>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-white py-4 sm:py-6 mt-8 sm:mt-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4">
-      <p class="text-sm sm:text-base">&copy; 2025 D'Crepes Cafe. All rights reserved.</p>
-      <div class="flex space-x-4">
-        <a href="#" class="hover:text-orange-400 transition duration-300 text-sm sm:text-base">Instagram</a>
-        <a href="#" class="hover:text-orange-400 transition duration-300 text-sm sm:text-base">Facebook</a>
-        <a href="#" class="hover:text-orange-400 transition duration-300 text-sm sm:text-base">Twitter</a>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Preloader and AOS JS -->
-  <script>
-    window.addEventListener("load", function () {
-      const loader = document.getElementById("preloader");
-      loader.classList.add("opacity-0");
-      setTimeout(() => loader.style.display = "none", 500);
-    });
 
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
 
-    // Mobile menu functionality
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      const overlay = document.getElementById('mobileOverlay');
-      
-      menu.classList.toggle('active');
-      
-      if (menu.classList.contains('active')) {
-        overlay.classList.remove('opacity-0', 'pointer-events-none');
-        overlay.classList.add('opacity-100');
-        document.body.style.overflow = 'hidden';
-      } else {
-        overlay.classList.add('opacity-0', 'pointer-events-none');
-        overlay.classList.remove('opacity-100');
-        document.body.style.overflow = '';
-      }
-    }
 
-    function closeMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      const overlay = document.getElementById('mobileOverlay');
-      
-      menu.classList.remove('active');
-      overlay.classList.add('opacity-0', 'pointer-events-none');
-      overlay.classList.remove('opacity-100');
-      document.body.style.overflow = '';
-    }
 
-    // Close mobile menu when window is resized to desktop
-    window.addEventListener('resize', function() {
-      if (window.innerWidth >= 640) {
-        closeMobileMenu();
-      }
-    });
-  </script>
+          
+
+
+
+    <!-- FOOTER  -->
+
+    <footer class="footer ">
+
+        <p>&copy; 2025 Navneet. All rights reserved. </p>
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/navneet-verma-32b370312/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/NavneetVermaaa" target="_blank"><i class="fab fa-github"></i></a>
+
+            <a href="https://instagram.com/ohh.navneet" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <!-- <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a> -->
+
+            <!-- WhatsApp Contact Link -->
+            <a href="https://wa.me/919322962133?text=Hi%20Navneet!%20I'm%20interested%20in%20your%20web%20development%20services."
+                target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+    <!-- AOS JS (FOR SCROLL ANIMATION) -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+        // AOS.init({
+        //     duration: 1000, // animation duration in ms
+        //     once: true      // animation happens only once
+
+        // });
+
+
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out', // optional for smoothness
+        });
+
+    </script>
+
 
 </body>
 
