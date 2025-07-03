@@ -43,24 +43,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // highlights the active nav link       
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      if (pageYOffset >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
+window.addEventListener("scroll", () => {
+  let current = "";
 
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    const topVisible = rect.top <= 150; // top enters the viewport
+    const bottomVisible = rect.bottom >= 150; // bottom hasn't gone past
+
+    if (topVisible && bottomVisible) {
+      current = section.getAttribute("id");
+    }
   });
 
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
 
+
+
+
+
+  
