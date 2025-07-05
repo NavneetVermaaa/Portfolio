@@ -2,20 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Interactive</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
 
+    <!-- ICONS -->
 
-    <!-- PRIVACY  -->
-
-    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
+    <!-- AOS JS (FOR SCROLL ANIMATION) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
+
+    <!-- SOCIAL MEDIA LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+    <!-- FEVICON (BROWSER ICON  )-->
+
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+    <!-- FAVICON (Browser Icon) -->
+    <!-- <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" /> -->
+
+
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="faviconn.png" sizes="32x32">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconn.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="faviconn.png">
+    <link rel="apple-touch-icon" href="faviconn.png">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SEO TAGS -->
+
+    <!-- Primary Meta Tags -->
+    <title>Navneet Verma | Frontend Developer</title>
+    <meta name="title" content="Navneet Verma | Frontend Developer">
+    <meta name="description"
+        content="I'm a frontend developer who builds clean, modern websites using HTML, CSS & JavaScript.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://navneetvermaaa.github.io/Portfolio/">
+    <meta property="og:title" content="Navneet Verma | Frontend Developer">
+    <meta property="og:description" content="I'm a frontend developer who builds clean, modern websites.">
+    <meta property="og:image" content="https://navneetvermaaa.github.io/Portfolio/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://navneetvermaaa.github.io/Portfolio/">
+    <meta property="twitter:title" content="Navneet Verma | Frontend Developer">
+    <meta property="twitter:description" content="I'm a frontend developer who builds clean, modern websites.">
+    <meta property="twitter:image" content="https://navneetvermaaa.github.io/Portfolio/preview.png">
+
+
+
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6Z8TFTZPS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P6Z8TFTZPS');
+    </script>
 
 
 
@@ -24,39 +101,88 @@
 <body>
 
 
-    <div class="header">
-        <h1>Our Community</h1>
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search members by name...">
+    <header class="site-header ">
+
+
+        <div class="container">
+
+            <h1 class="logo">Navneet</h1>
+
         </div>
-    </div>
 
 
-    <!-- <p style="text-align:center">Meet the talented professionals in our network</p>
+        <nav class="navbar ">
+
+            <ul class="nav-links">
+
+                <li><a href="#home" class="active">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#skill">Skill</a></li>
+
+                <li><a href="#pricing">Pricing</a></li>
+
+                <li><a href="#contact">Contact me</a></li>
+
+            </ul>
+        </nav>
 
 
-
-    <div class="stats">
-        <div class="stat-box">
-            <h2>3</h2>
-            <p>Community Members</p>
-        </div>
-        <div class="stat-box">
-            <h2>3</h2>
-            <p>Different Professions</p>
-        </div>
-        <div class="stat-box">
-            <h2>1</h2>
-            <p>Cities Represented</p>
-        </div>
-    </div> -->
+    </header>
 
 
+    <!-- SECTION  -->
 
-    <section class="hero-section">
+    <section class="hero " id="home" data-aos="zoom-out-down">
+
+        <!-- <div class="img">
+            <img src="6.jpg" alt="">
+        </div> -->
+
         <div class="hero-content">
-            <h1>PROFESSIONAL INTERACTIVE</h1>
-            <p>Where elegance meets expertise</p>
+
+            <h1>Hello! I am <span>Navneet</span></h1>
+
+            <p>A passionate Frontend Developer crafting beautiful web experiences.</p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">View Projects</a>
+
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ABOUT ME SECTION  -->
+
+    <section class="about " id="about" data-aos="fade-up">
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I'm Navneet, a frontend web developer with a passion for creating beautiful and functional websites.
+                    <br> <br>
+                    I specialize in turning ideas into interactive digital experiences using HTML, CSS, and JavaScript.
+                    <br> <br>
+                </p>
+                <p>
+                    My goal is to deliver visually impressive and responsive designs that leave a lasting impression.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="myimg2.jpg" alt="Navneet">
+            </div>
         </div>
     </section>
 
@@ -67,3280 +193,160 @@
 
 
 
-    <!-- cards  -->
 
 
+    <!-- PROJECTS SECTION  -->
 
+    <section class="projects " id="projects" data-aos="fade-up">
 
+        <h2 class="section-title">Projects</h2>
 
+        <div class="projects-container">
 
+            <!-- <div class="project-card">
 
 
 
 
 
+                <img src="PRJCT1.png" />
 
+                <h3>Project 1</h3>
+                <p>Crazy 3D Rotation Effect Using CSS Only.</p>
+                <p>(This site is only responsive for PC)</p>
 
+                <a href="https://navneetvermaaa.github.io/project1/" class="project-btn" target="_blank">View
+                    Project</a>
 
-    <section class="profiles-section">
 
 
-        <div class="cards-container" id="cardContainer">
-            <div class="card" data-name="navneet verma">
-                <img src="Navneet.jpg" alt="Navneet Verma" />
-                <h3>Navneet Verma</h3>
-                <p style="color:#3da3ff">Front-End Web Developer</p>
-                <p>📍 Thane</p>
-                <button onclick="openModal('navneet')">Click to view details</button>
             </div>
 
-            <div class="modal" id="profileModal-navneet">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('navneet')">&times;</span>
-                    <img src="Navneet.jpg" alt="Navneet Verma" />
-                    <h2>Navneet Verma</h2>
-                    <p style="color:#3da3ff">Front-End Web Developer</p>
-                    <p>📍 Thane</p>
-                    <p>📧 navneet.v0000001@gmail.com (For Businees)</p>
-                    <p>📞 9322962133</p>
-                    <p>🌐 <a href="https://navneetvermaaa.github.io/Portfolio/" target="_blank"
-                            style="color:lightblue">Portfolio</a></p>
-                    <h4>About</h4>
-                    <p>Passionate Front-End web developer<br>pursuing B.Tech in AIML.</p>
-                    <h4>Parents</h4>
-                    <p>Pawan Verma & Urmila Verma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Tailwind</span>
-                        <span>AI</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-            <div class="cards-container" id="cardContainer">
-                <div class="card" data-name="ritesh varma">
-                    <img src="RITESH.png" alt="Ritesh Varma" />
-                    <h3>Ritesh Varma</h3>
-                    <p style="color:#3da3ff">Employee</p>
-                    <p>📍 Malad East</p>
-                    <button onclick="openModal('ritesh')">Click to view details</button>
-                </div>
-            </div>
-
-            <div class="modal" id="profileModal-ritesh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ritesh')">&times;</span>
-                    <img src="RITESH.png" alt="Ritesh Varma" />
-                    <h2>Ritesh Varma</h2>
-                    <p style="color:#3da3ff">Employee</p>
-                    <p>📍 Malad East</p>
-                    <p>📧 varmaritesh509@gmail.com</p>
-                    <p>📞 9870495085</p>
-                    <h4>About</h4>
-                    <p>B.COM graduate<br>from Danta Ramgarh, Rajasthan</p>
-                    <h4>Parents</h4>
-                    <p>Mahesh Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Communication</span>
-                        <span>Work Ethics</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-            <div class="card" data-name="bhumi varma">
-                <img src="Bhumi.jpg" alt="Bhumi Mahesh Varma" />
-                <h3>Bhumi Mahesh Varma</h3>
-                <p style="color:#3da3ff">Freelancer</p>
-                <p>📍 Malad, Mumbai</p>
-                <button onclick="openModal('bhumi')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-bhumi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('bhumi')">&times;</span>
-                    <img src="Bhumi.jpg" alt="Bhumi Mahesh Varma" />
-                    <h2>Bhumi Mahesh Varma</h2>
-                    <p style="color:#3da3ff">Freelancer - Graphic Designing, Branding, Editing</p>
-                    <p>📍 Malad, Mumbai</p>
-                    <p>📧 varmabhumi@gmail.com</p>
-                    <p>📞 8850052084</p>
-                    <h4>About</h4>
-                    <p>Pursuing B.Com | Graphic Designer & VFX Artist<br>Logo, Invitations, Stop Motion.</p>
-                    <h4>Parents</h4>
-                    <p>Mahesh Varma & Anita Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Graphic Design</span>
-                        <span>Branding</span>
-                        <span>VFX</span>
-                        <span>Stop Motion</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="card" data-name="anamika jalandra">
-                <img src="Anamika.png" alt="Dr Anamika Jalandra" />
-                <h3>Dr. Anamika Jalandra</h3>
-                <p style="color:#3da3ff">Homeopathic Physician</p>
-                <p>📍 Jaipur, Rajasthan</p>
-                <button onclick="openModal('anamika')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-anamika">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('anamika')">&times;</span>
-                    <img src="Anamika.png" alt="Dr Anamika Jalandra" />
-                    <h2>Dr. Anamika Omprakash Jalandra</h2>
-                    <p style="color:#3da3ff">Homeopathic Physician</p>
-                    <p>📍 Jaipur, Rajasthan</p>
-                    <p>📧 anamikajalndra@gmail.com</p>
-                    <p>📞 9610476476</p>
-                    <h4>About</h4>
-                    <p>B.H.M.S, C.G.O, D.O.M (Mumbai)<br>RootCure Homeopathy</p>
-                    <h4>Parents</h4>
-                    <p>Omprakash & Parmeshwari Jalandra</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Homeopathy</span>
-                        <span>Consultation</span>
-                        <span>Healing</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="card" data-name="yogita varma">
-                <img src="Yogita.png" alt="Yogita Varma" />
-                <h3>Yogita Varma</h3>
-                <p style="color:#3da3ff">Manager - VoltUp</p>
-                <p>📍 Andheri East, Mumbai</p>
-                <button onclick="openModal('yogita')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-yogita">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('yogita')">&times;</span>
-                    <img src="Yogita.png" alt="Yogita Varma" />
-                    <h2>Yogita Savarmal Varma</h2>
-                    <p style="color:#3da3ff">Manager – Business Development & Strategy</p>
-                    <p>📍 Andheri East, Mumbai</p>
-                    <p>📧 yogitavarma95@gmail.com</p>
-                    <h4>About</h4>
-                    <p>B.Com, M.Com, MBA (Marketing)<br>Working at VoltUp</p>
-                    <h4>Parents</h4>
-                    <p>Sangeeta & Savarmal Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Strategy</span>
-                        <span>Business Development</span>
-                        <span>Marketing</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="card" data-name="manish kumawat">
-                <img src="Manish.png" alt="Manish Kumawat" />
-                <h3>Manish Kumawat</h3>
-                <p style="color:#3da3ff">Senior Manager - YES Bank</p>
-                <p>📍 Mira Road</p>
-                <button onclick="openModal('manish')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-manish">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('manish')">&times;</span>
-                    <img src="Manish.png" alt="Manish Kumawat" />
-                    <h2>Manish Bhairuram Kumawat</h2>
-                    <p style="color:#3da3ff">Senior Manager – YES Bank Ltd.</p>
-                    <p>📍 Mira Road</p>
-                    <p>📧 kumawatmanish03@gmail.com</p>
-                    <p>📞 8097329242</p>
-                    <h4>About</h4>
-                    <p>CS, LL.B, B.COM<br>From Nim Ka Thana</p>
-                    <h4>Parents</h4>
-                    <p>Bhairuram & Rukmini Kumawat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Banking</span>
-                        <span>Compliance</span>
-                        <span>Law</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="card" data-name="aishwarya verma">
-                <img src="Aishwarya.png" alt="Aishwarya Verma" />
-                <h3>Aishwarya Verma</h3>
-                <p style="color:#3da3ff">AGM – Sunteck Realty</p>
-                <p>📍 Mira Road</p>
-                <button onclick="openModal('aishwarya')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-aishwarya">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('aishwarya')">&times;</span>
-                    <img src="Aishwarya.png" alt="Aishwarya Verma" />
-                    <h2>Aishwarya Rajesh Verma</h2>
-                    <p style="color:#3da3ff">AGM – Sunteck Realty</p>
-                    <p>📍 Mira Road</p>
-                    <p>📧 aishuverma51@gmail.com</p>
-                    <p>📞 8879578561</p>
-                    <h4>About</h4>
-                    <p>B Arch<br>From Danta Ramgarh</p>
-                    <h4>Parents</h4>
-                    <p>Rajesh & Manju Verma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Architecture</span>
-                        <span>Real Estate</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="card" data-name="anmol prajapat">
-                <img src="Anmol.png" alt="Anmol Prajapat" />
-                <h3>Anmol Prajapat</h3>
-                <p style="color:#3da3ff">Consultant – KPMG</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('anmol')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-anmol">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('anmol')">&times;</span>
-                    <img src="Anmol.png" alt="Anmol Prajapat" />
-                    <h2>Anmol Prajapat</h2>
-                    <p style="color:#3da3ff">Techno-Legal Consultant at KPMG</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 7700066250</p>
-                    <h4>About</h4>
-                    <p>Masters in Cyber Law & Info Security<br>BBA LLB</p>
-                    <h4>Parents</h4>
-                    <p>Ramesh & Nisha Prajapat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Cyber Law</span>
-                        <span>Legal Tech</span>
-                        <span>Consulting</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="card" data-name="purab morwal">
-                <img src="Purab.png" alt="Purab Morwal" />
-                <h3>Purab Morwal</h3>
-                <p style="color:#3da3ff">Manager – Kalpataru Ltd</p>
-                <p>📍 Andheri West</p>
-                <button onclick="openModal('purab')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-purab">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('purab')">&times;</span>
-                    <img src="Purab.png" alt="Purab Morwal" />
-                    <h2>Purab Vidyadhar Morwal</h2>
-                    <p style="color:#3da3ff">Project Control & Planning – Kalpataru</p>
-                    <p>📍 Andheri West</p>
-                    <p>📞 9769405450</p>
-                    <h4>About</h4>
-                    <p>B.Tech (Civil), MBA (Project Mgmt)</p>
-                    <h4>Parents</h4>
-                    <p>Seema & Late Vidyadhar Morwal</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Project Management</span>
-                        <span>Construction</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-            <div class="card" data-name="archana kumawat">
-                <img src="Archana.png" alt="Archana Kumawat" />
-                <h3>Archana Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Bhayander East</p>
-                <button onclick="openModal('archana')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-archana">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('archana')">&times;</span>
-                    <img src="Archana.png" alt="Archana Kumawat" />
-                    <h2>Archana Kumawat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant (CA)</p>
-                    <p>📍 Bhayander East</p>
-                    <p>📞 9892834798</p>
-                    <h4>About</h4>
-                    <p>B.Com | CA Course<br>From Jodhpur</p>
-                    <h4>Parents</h4>
-                    <p>Chandraprakash & Annpurna Kumawat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Accounting</span>
-                        <span>Auditing</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="card" data-name="ruchika varma">
-                <img src="Ruchika.png" alt="Ruchika Varma" />
-                <h3>Ruchika Varma</h3>
-                <p style="color:#3da3ff">Counselling Psychologist</p>
-                <p>📍 Vapi, Gujarat</p>
-                <button onclick="openModal('ruchika')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-ruchika">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ruchika')">&times;</span>
-                    <img src="Ruchika.png" alt="Ruchika Varma" />
-                    <h2>Ruchika Nopchand Varma</h2>
-                    <p style="color:#3da3ff">Counselling Psychologist</p>
-                    <p>📍 Vapi, Gujarat</p>
-                    <p>📞 9586539908</p>
-                    <h4>About</h4>
-                    <p>Masters in Counselling Psychology</p>
-                    <h4>Parents</h4>
-                    <p>Sanju & Nopchand Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Therapy</span>
-                        <span>Mental Health</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <!-- Member 11: Yogendra Devender Prajapat -->
-            <div class="card" data-name="yogendra prajapat">
-                <img src="Yogendra.png" alt="Yogendra Devender Prajapat" />
-                <h3>Yogendra Devender Prajapat</h3>
-                <p style="color:#3da3ff">Consulting at EY / Family Business</p>
-                <p>📍 Goregaon, Mumbai</p>
-                <button onclick="openModal('yogendra')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-yogendra">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('yogendra')">&times;</span>
-                    <img src="yogendra.png" alt="Yogendra Devender Prajapat" />
-                    <h2>Yogendra Devender Prajapat</h2>
-                    <p style="color:#3da3ff">CA, LLB | EY (Audit)</p>
-                    <p>📍 Goregaon, Mumbai</p>
-                    <p>📧 prajapatyogendra@gmail.com</p>
-                    <p>📞 8097070226</p>
-                    <h4>About</h4>
-                    <p>Chartered Accountant, Family Business</p>
-                    <h4>Parents</h4>
-                    <p>CA Devender Prajapat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Audit</span>
-                        <span>Finance</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 12: Kritika Nopchand Varma -->
-            <div class="card" data-name="kritika varma">
-                <img src="Kritika.png" alt="Kritika Nopchand Varma" />
-                <h3>Kritika Nopchand Varma</h3>
-                <p style="color:#3da3ff">Interior Designer</p>
-                <p>📍 Vapi, Gujarat</p>
-                <button onclick="openModal('kritika')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-kritika">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('kritika')">&times;</span>
-                    <img src="kritika.png" alt="Kritika Nopchand Varma" />
-                    <h2>Kritika Nopchand Varma</h2>
-                    <p style="color:#3da3ff">Design Director, Dandelion Interiors</p>
-                    <p>📍 Vapi, Gujarat</p>
-                    <p>📞 9737219511</p>
-                    <h4>About</h4>
-                    <p>B.Des Interior Design | Founder of Dandelion Interiors</p>
-                    <h4>Parents</h4>
-                    <p>Sanju & Nopchand Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Interior Design</span>
-                        <span>Creative Direction</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 13: Capt. Mrinal Kumawat -->
-            <div class="card" data-name="mrinal kumawat">
-                <img src="mrinal.png" alt="Capt. Mrinal Kumawat" />
-                <h3>Capt. Mrinal Kumawat</h3>
-                <p style="color:#3da3ff">Pilot – Air India</p>
-                <p>📍 Jaipur / Delhi</p>
-                <button onclick="openModal('mrinal')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-mrinal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('mrinal')">&times;</span>
-                    <img src="mrinal.png" alt="Capt. Mrinal Kumawat" />
-                    <h2>Capt. Mrinal Kumawat</h2>
-                    <p style="color:#3da3ff">Airbus A350 – Air India</p>
-                    <p>📍 Jaipur / Delhi</p>
-                    <p>📧 capt.mrinalkumawat@gmail.com</p>
-                    <p>📞 7424874215</p>
-                    <h4>About</h4>
-                    <p>Commercial Pilot | BSc Aviation | 2000+ flying hours</p>
-                    <h4>Parents</h4>
-                    <p>Manish & Mithila Kumawat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Aviation</span>
-                        <span>Flight Safety</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 14: Dr. Garima Kumawat -->
-            <div class="card" data-name="garima kumawat">
-                <img src="garima.png" alt="Dr Garima Kumawat" />
-                <h3>Dr Garima Kumawat</h3>
-                <p style="color:#3da3ff">Assistant Professor</p>
-                <p>📍 Gandhinagar, Gujarat</p>
-                <button onclick="openModal('garima')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-garima">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('garima')">&times;</span>
-                    <img src="garima.png" alt="Dr Garima Kumawat" />
-                    <h2>Dr Garima Kumawat</h2>
-                    <p style="color:#3da3ff">PhD in Maritime Security</p>
-                    <p>📍 Gandhinagar, Gujarat</p>
-                    <p>📞 7412915116</p>
-                    <h4>About</h4>
-                    <p>Assistant Professor at Rashtriya Raksha University</p>
-                    <h4>Parents</h4>
-                    <p>Satyanarayan & Kusum Verma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Maritime Security</span>
-                        <span>Teaching</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 15: Amit Kumawat -->
-            <div class="card" data-name="amit kumawat">
-                <img src="amit.png" alt="Amit Kumawat" />
-                <h3>Amit Kumawat</h3>
-                <p style="color:#3da3ff">Sr. Manager – Asset Management</p>
-                <p>📍 Dahisar, Mumbai</p>
-                <button onclick="openModal('amit')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-amit">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('amit')">&times;</span>
-                    <img src="amit.png" alt="Amit Kumawat" />
-                    <h2>Amit Kumawat</h2>
-                    <p style="color:#3da3ff">Senior Manager - Asset Management</p>
-                    <p>📍 Dahisar, Mumbai</p>
-                    <p>📞 9820213372</p>
-                    <h4>About</h4>
-                    <p>MBA | Asset Manager</p>
-                    <h4>Parents</h4>
-                    <p>Shankerlal Kumawat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Finance</span>
-                        <span>Asset Management</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 16: Sourabh Naik -->
-            <div class="card" data-name="sourabh naik">
-                <img src="sourabh.png" alt="Sourabh Naik" />
-                <h3>Sourabh Naik</h3>
-                <p style="color:#3da3ff">Senior Automation Engineer</p>
-                <p>📍 Germany</p>
-                <button onclick="openModal('sourabh')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-sourabh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sourabh')">&times;</span>
-                    <img src="sourabh.png" alt="Sourabh Naik" />
-                    <h2>Sourabh Naik</h2>
-                    <p style="color:#3da3ff">Automation | Robotics</p>
-                    <p>📍 Germany</p>
-                    <p>📞 9689432351</p>
-                    <h4>About</h4>
-                    <p>Masters in Mechatronics & Robotics + MBA</p>
-                    <h4>Parents</h4>
-                    <p>Milind & Gayatri Naik</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Automation</span>
-                        <span>Robotics</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 17: Rajesh Kumawat -->
-            <div class="card" data-name="rajesh kumawat">
-                <img src="Profile.png" alt="Rajesh Kumawat" />
-                <h3>Rajesh Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Bhayander East</p>
-                <button onclick="openModal('rajesh')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-rajesh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('rajesh')">&times;</span>
-                    <img src="Profile.png" alt="Rajesh Kumawat" />
-                    <h2>Rajesh Kumawat</h2>
-                    <p style="color:#3da3ff">CA | B.Com</p>
-                    <p>📍 Bhayander East</p>
-                    <p>📞 9970905402</p>
-                    <h4>About</h4>
-                    <p>Chartered Accountant from Mukundgarh</p>
-                    <h4>Parents</h4>
-                    <p>Loon Chand & Rukmani Kumawat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Accounting</span>
-                        <span>Finance</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 18: Monica Varma -->
-            <div class="card" data-name="monica varma">
-                <img src="monica.png" alt="Monica Varma" />
-                <h3>Monica Varma</h3>
-                <p style="color:#3da3ff">Sr. Financial Associate – Morgan Stanley</p>
-                <p>📍 Bhayander West</p>
-                <button onclick="openModal('monica')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-monica">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('monica')">&times;</span>
-                    <img src="monica.png" alt="Monica Varma" />
-                    <h2>Monica Varma</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Bhayander West</p>
-                    <p>📞 8082732008</p>
-                    <h4>About</h4>
-                    <p>Working at Morgan Stanley | Khatu Shyamji</p>
-                    <h4>Parents</h4>
-                    <p>Parmeshwar & Kaushalaya Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Finance</span>
-                        <span>Auditing</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 19: Hemant Varma -->
-            <div class="card" data-name="hemant varma">
-                <img src="hemant.png" alt="Hemant Varma" />
-                <h3>Hemant Varma</h3>
-                <p style="color:#3da3ff">Architect – Director, The H+ Architects</p>
-                <p>📍 Lonavala, Pune</p>
-                <button onclick="openModal('hemant')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-hemant">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('hemant')">&times;</span>
-                    <img src="hemant.png" alt="Hemant Varma" />
-                    <h2>Hemant Varma</h2>
-                    <p style="color:#3da3ff">Masters in Urban Design</p>
-                    <p>📍 Lonavala, Pune</p>
-                    <p>📞 9673874993</p>
-                    <h4>About</h4>
-                    <p>Architect & Director at The H+ Architects</p>
-                    <h4>Parents</h4>
-                    <p>Babulalji & Vimaladevi Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Architecture</span>
-                        <span>Urban Design</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 20: Arvind Kumavat -->
-            <div class="card" data-name="arvind kumavat">
-                <img src="arvind.png" alt="Arvind Kumavat" />
-                <h3>Arvind Kumavat</h3>
-                <p style="color:#3da3ff">Regional Head – Kotak Bank</p>
-                <p>📍 Surat</p>
-                <button onclick="openModal('arvind')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-arvind">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('arvind')">&times;</span>
-                    <img src="arvind.png" alt="Arvind Kumavat" />
-                    <h2>Arvind Kumavat</h2>
-                    <p style="color:#3da3ff">Regional Head @ Kotak Bank</p>
-                    <p>📍 Surat</p>
-                    <h4>About</h4>
-                    <p>MBA Graduate from Mandawa, Rajasthan</p>
-                    <h4>Parents</h4>
-                    <p>Sitaramji & Munnidevi Chappola</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Banking</span>
-                        <span>Leadership</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <!-- Member 21 - Pradeep Varma -->
-            <div class="card" data-name="pradeep varma">
-                <img src="Profile.png" alt="Pradeep Varma" />
-                <h3>Pradeep Varma</h3>
-                <p style="color:#3da3ff">Sr. Account Officer - Somaiya Vidyavihar</p>
-                <p>📍 Bhayander – West</p>
-                <button onclick="openModal('pradeep')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-pradeep">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('pradeep')">&times;</span>
-                    <img src="Profile.png" alt="Pradeep Varma" />
-                    <h2>Pradeep Varma</h2>
-                    <p style="color:#3da3ff">Sr. Account Officer - Somaiya Vidyavihar</p>
-                    <p>📍 Bhayander – West</p>
-                    <p>📞 76668 70763</p>
-                    <h4>About</h4>
-                    <p>CA-IPCC, M.Com, Mutual Fund Distributor</p>
-                    <h4>Parents</h4>
-                    <p>Parmeshwar & Kaushalya Devi Varma</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Accounting</span>
-                        <span>Finance</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 22 - Dr. Nilesh Kumawat -->
-            <div class="card" data-name="nilesh kumawat">
-                <img src="Nilesh.jpg" alt="Dr. Nilesh Kumawat" />
-                <h3>Dr. Nilesh Radheshyam Kumawat</h3>
-                <p style="color:#3da3ff">Doctor (Diabetologist & Obesity Specialist)</p>
-                <p>📍 Andheri (W), Mumbai</p>
-                <button onclick="openModal('nilesh')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-nilesh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('nilesh')">&times;</span>
-                    <img src="Nilesh.jpg" alt="Dr. Nilesh Kumawat" />
-                    <h2>Dr. Nilesh Radheshyam Kumawat</h2>
-                    <p style="color:#3da3ff">Doctor (Diabetologist & Obesity Specialist)</p>
-                    <p>📍 Andheri (W), Mumbai</p>
-                    <p>📞 91679 16399</p>
-                    <h4>About</h4>
-                    <p>MBBS, Fellowship in Diabetology</p>
-                    <h4>Parents</h4>
-                    <p>Dr. Radheshyam & Vijaya Kumawat</p>
-                    <h4>Skills</h4>
-                    <div class="tags">
-                        <span>Diabetology</span>
-                        <span>Healthcare</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Member 23 - Umashankar Kumawat -->
-            <div class="card" data-name="umashankar kumawat">
-                <img src="Umashankar.jpg" alt="Umashankar Kumawat" />
-                <h3>Umashankar Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Kandivali East</p>
-                <button onclick="openModal('umashankar')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-umashankar">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('umashankar')">&times;</span>
-                    <img src="Umashankar.jpg" alt="Umashankar Kumawat" />
-                    <h2>Umashankar Kumawat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Kandivali East</p>
-                    <p>📞 96194 95747</p>
-                    <h4>About</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Giradhari Lal & Vimala Devi Kumawat</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Member 24 - Prakash Kumar Kumawat -->
-            <div class="card" data-name="prakash kumawat">
-                <img src="Prakash.jpg" alt="Prakash Kumar Kumawat" />
-                <h3>Prakash Kumar Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Bhayander East</p>
-                <button onclick="openModal('prakash')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-prakash">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('prakash')">&times;</span>
-                    <img src="Prakash.jpg" alt="Prakash Kumar Kumawat" />
-                    <h2>Prakash Kumar Kumawat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Bhayander East</p>
-                    <p>📞 98195 21846</p>
-                    <h4>About</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Late Suresh Kumar Kumawat</p>
-                </div>
-            </div>
-
-            <!-- Member 25 - Divya Bobriya -->
-            <div class="card" data-name="divya bobriya">
-                <img src="Profile.png" alt="Divya Bobriya" />
-                <h3>Divya Bobriya</h3>
-                <p style="color:#3da3ff">BIM Modeler</p>
-                <p>📍 Pune</p>
-                <button onclick="openModal('divya')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-divya">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('divya')">&times;</span>
-                    <img src="Profile.png" alt="Divya Bobriya" />
-                    <h2>Divya Bobriya</h2>
-                    <p style="color:#3da3ff">BIM Modeler</p>
-                    <p>📍 Pune</p>
-                    <p>📞 70307 05437</p>
-                    <h4>About</h4>
-                    <p>BE Civil</p>
-                    <h4>Parents</h4>
-                    <p>Subhash Bobriya</p>
-                </div>
-            </div>
-
-            <!-- Member 26 - Prashant Ghorela -->
-            <div class="card" data-name="prashant ghorela">
-                <img src="Prashant.jpg" alt="Prashant Ghorela" />
-                <h3>Prashant Ghorela</h3>
-                <p style="color:#3da3ff">Chartered Accountant & Registered Valuer (SFA)</p>
-                <p>📍 Borivali East, Mumbai</p>
-                <button onclick="openModal('prashant')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-prashant">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('prashant')">&times;</span>
-                    <img src="Prashant.jpg" alt="Prashant Ghorela" />
-                    <h2>Prashant Ghorela</h2>
-                    <p style="color:#3da3ff">CA & Registered Valuer (SFA)</p>
-                    <p>📍 Borivali East, Mumbai</p>
-                    <p>📞 90223 49798</p>
-                    <h4>About</h4>
-                    <p>Chartered Accountant & Registered Valuer (SFA)</p>
-                    <h4>Parents</h4>
-                    <p>Dr. Girdharilal & Mrs. Mani Devi</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Member 27 - Jitendra Kumawat -->
-            <div class="card" data-name="jitendra kumawat">
-                <img src="Jitendra.jpg" alt="Jitendra Kumawat" />
-                <h3>Jitendra Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('jitendra')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-jitendra">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('jitendra')">&times;</span>
-                    <img src="Jitendra.jpg" alt="Jitendra Kumawat" />
-                    <h2>Jitendra Kumawat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 77385 88813</p>
-                    <h4>About</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Indar Chand & Sushila Kumawat</p>
-                </div>
-            </div>
-
-            <!-- Member 28 - Uttamprakash Jalndra -->
-            <div class="card" data-name="uttamprakash jalndra">
-                <img src="Uttamprakash.jpg" alt="Uttamprakash Jalndra" />
-                <h3>Uttamprakash Jalndra</h3>
-                <p style="color:#3da3ff">Industrialist, Educationist, Exhibition Professional</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('uttam')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-uttam">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('uttam')">&times;</span>
-                    <img src="Uttamprakash.jpg" alt="Uttamprakash Jalndra" />
-                    <h2>Uttamprakash Jalndra</h2>
-                    <p style="color:#3da3ff">Industrialist, Educationist, Exhibition Professional</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 98921 93923</p>
-                    <h4>About</h4>
-                    <p>MBA, Masters in Economics</p>
-                    <h4>Parents</h4>
-                    <p>Omprakash Jalndra</p>
-                </div>
-            </div>
-
-            <!-- Member 29 - Deepam Prajapati -->
-            <div class="card" data-name="deepam prajapati">
-                <img src="Deepam.jpg" alt="Deepam Prajapati" />
-                <h3>Deepam Prajapati</h3>
-                <p style="color:#3da3ff">Entrepreneur & Motorsport Athlete</p>
-                <p>📍 Chandigarh</p>
-                <button onclick="openModal('deepam')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-deepam">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('deepam')">&times;</span>
-                    <img src="Deepam.jpg" alt="Deepam Prajapati" />
-                    <h2>Deepam Prajapati</h2>
-                    <p style="color:#3da3ff">Entrepreneur & Motorsport Athlete</p>
-                    <p>📍 Chandigarh</p>
-                    <p>📞 98729 33333</p>
-                    <h4>About</h4>
-                    <p>BBA Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Raj Kishor & Saroj Prajapati</p>
-                </div>
-            </div>
-
-            <!-- Member 30 - Ranjana Kumawat -->
-            <div class="card" data-name="ranjana kumawat">
-                <img src="Ranjana.jpg" alt="Ranjana Kumawat" />
-                <h3>Ranjana Kumawat</h3>
-                <p style="color:#3da3ff">Real Estate Agent</p>
-                <p>📍 Goregaon West</p>
-                <button onclick="openModal('ranjana')">Click to view details</button>
-            </div>
-
-            <div class="modal" id="profileModal-ranjana">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ranjana')">&times;</span>
-                    <img src="Ranjana.jpg" alt="Ranjana Kumawat" />
-                    <h2>Ranjana Kumawat</h2>
-                    <p style="color:#3da3ff">Real Estate Agent</p>
-                    <p>📍 Goregaon West</p>
-                    <p>📞 81071 86222</p>
-                    <h4>Parents</h4>
-                    <p>Dinesh Chandra & Sushila Kumawat</p>
-                </div>
-            </div>
-
-
-
-
-            <!-- Member 31 - Ankita Kumawat -->
-            <div class="card" data-name="ankita kumawat">
-                <img src="Ankita.jpg" alt="Ankita Kumawat" />
-                <h3>Ankita Kumawat</h3>
-                <p style="color:#3da3ff">Corporate Lawyer</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('ankita')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-ankita">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ankita')">&times;</span>
-                    <img src="Ankita.jpg" alt="Ankita Kumawat" />
-                    <h2>Ankita Kumawat</h2>
-                    <p style="color:#3da3ff">Corporate Lawyer</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 +91 93263 53366</p>
-                    <h4>About</h4>
-                    <p>Deputy Manager, Bombay Intelligence Security India Ltd</p>
-                    <h4>Qualification</h4>
-                    <p>Graduate in Corporate Law, CA finalist, M.Com, B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Mr. Krishna Gopal Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Jaora, Ratlam (Madhya Pradesh)</p>
-                </div>
-            </div>
-
-            <!-- Member 32 - Abhinav Kumawat -->
-            <div class="card" data-name="abhinav kumawat">
-                <img src="Profile.png" alt="Abhinav Kumawat" />
-                <h3>Abhinav Kumawat</h3>
-                <p style="color:#3da3ff">Consultant Architect</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('abhinav')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-abhinav">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('abhinav')">&times;</span>
-                    <img src="Profile.png" alt="Abhinav Kumawat" />
-                    <h2>Abhinav Kumawat</h2>
-                    <p style="color:#3da3ff">Consultant Architect</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 +91 94606 79884</p>
-                    <h4>Qualification</h4>
-                    <p>M.Arch</p>
-                    <h4>Parents</h4>
-                    <p>Mr. Ashok Kumawat & Mrs. Manju Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Kishangarh, District Ajmer (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 33 - Mukesh Verma -->
-            <div class="card" data-name="mukesh verma">
-                <img src="Profile.png" alt="Mukesh Verma" />
-                <h3>Mukesh Verma</h3>
-                <p style="color:#3da3ff">Regional Head, Tricolour Financial Services Pvt Ltd</p>
-                <p>📍 Goregaon, Mumbai</p>
-                <button onclick="openModal('mukesh')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-mukesh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('mukesh')">&times;</span>
-                    <img src="Profile.png" alt="Mukesh Verma" />
-                    <h2>Mukesh Verma</h2>
-                    <p style="color:#3da3ff">ex-DGM, PNB; Regional Head, Tricolour Financial Services Pvt Ltd</p>
-                    <p>📍 Goregaon, Mumbai</p>
-                    <p>📞 +91 88280 00227</p>
-                    <h4>Qualification</h4>
-                    <p>M.Sc (Agriculture)</p>
-                    <h4>Parents</h4>
-                    <p>Late Rameshwar Verma & Asha Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Sodala, Jaipur (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 34 - Shalu Varma -->
-            <div class="card" data-name="shalu varma">
-                <img src="Shalu.jpg" alt="Shalu Varma" />
-                <h3>Shalu Varma</h3>
-                <p style="color:#3da3ff">Architect & Interior Designer</p>
-                <p>📍 Andheri West, Mumbai</p>
-                <button onclick="openModal('shalu')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-shalu">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('shalu')">&times;</span>
-                    <img src="Shalu.jpg" alt="Shalu Varma" />
-                    <h2>Shalu Varma</h2>
-                    <p style="color:#3da3ff">Architect, Interior Designer</p>
-                    <p>📍 Andheri West, Mumbai</p>
-                    <p>📞 +91 81698 37603</p>
-                    <h4>Firm</h4>
-                    <p>SBV ARCHITECT, Mahalaxmi (Nahar Group)</p>
-                    <h4>Qualification</h4>
-                    <p>B.Arch (1997, MNIT Jaipur)</p>
-                    <h4>Parents</h4>
-                    <p>Sh. Govind Singh Taunk (Retd PWD Engineer, Mayor - Udaipur)</p>
-                    <h4>Husband</h4>
-                    <p>Sh. Bhavani Shankar Varma (Jhunjhunu)</p>
-                </div>
-            </div>
-
-            <!-- Member 35 - Chandan Varma -->
-            <div class="card" data-name="chandan varma">
-                <img src="Chandan.jpg" alt="Chandan Varma" />
-                <h3>Chandan Varma</h3>
-                <p style="color:#3da3ff">Wealth Manager</p>
-                <p>📍 Goregaon, Mumbai</p>
-                <button onclick="openModal('chandan')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-chandan">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('chandan')">&times;</span>
-                    <img src="Chandan.jpg" alt="Chandan Varma" />
-                    <h2>Chandan Varma</h2>
-                    <p style="color:#3da3ff">Wealth Manager</p>
-                    <p>📍 Goregaon, Mumbai</p>
-                    <p>📞 +91 97692 21783</p>
-                    <h4>Qualification</h4>
-                    <p>MBA in Finance</p>
-                    <h4>Parents</h4>
-                    <p>Sunil Varma & Kiran Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Mandawa (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 36 - Sonal Amit Kumawat -->
-            <div class="card" data-name="sonal kumawat">
-                <img src="Sonal.jpg" alt="Sonal Amit Kumawat" />
-                <h3>Sonal Amit Kumawat</h3>
-                <p style="color:#3da3ff">Teacher</p>
-                <p>📍 Dahisar, Mumbai</p>
-                <button onclick="openModal('sonal')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sonal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sonal')">&times;</span>
-                    <img src="Sonal.jpg" alt="Sonal Amit Kumawat" />
-                    <h2>Sonal Amit Kumawat</h2>
-                    <p style="color:#3da3ff">Teacher</p>
-                    <p>📍 Dahisar, Mumbai</p>
-                    <p>📞 +91 99208 44682</p>
-                    <h4>Qualification</h4>
-                    <p>M.Com, MBA, B.Ed.</p>
-                    <h4>Parents</h4>
-                    <p>Babulal Chejara & Santosh Chejara</p>
-                    <h4>Hometown</h4>
-                    <p>Nawalgarh (Rajasthan)</p>
-                </div>
-            </div>
-
-
-
-
-
-            <!-- Member 37 - Sagar Naik -->
-            <div class="card" data-name="sagar naik">
-                <img src="Sagar.jpg" alt="Sagar Naik" />
-                <h3>Sagar Naik</h3>
-                <p style="color:#3da3ff">Divisional Security Officer</p>
-                <p>📍 Prabhadevi</p>
-                <button onclick="openModal('sagar')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sagar">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sagar')">&times;</span>
-                    <img src="Sagar.jpg" alt="Sagar Naik" />
-                    <h2>Mr. Sagar Naik</h2>
-                    <p style="color:#3da3ff">Divisional Security Officer (BMC)</p>
-                    <p>📍 Prabhadevi</p>
-                    <p>📞 +91 91672 02156</p>
-                    <h4>Qualification</h4>
-                    <p>M.A. (Political Science)</p>
-                    <h4>Parents</h4>
-                    <p>Mr. Deepak Naik & Mrs. Aarati Naik</p>
-                </div>
-            </div>
-
-            <!-- Member 38 - Sakshi Morwal -->
-            <div class="card" data-name="sakshi morwal">
-                <img src="Sakshi.jpg" alt="Sakshi Morwal" />
-                <h3>Sakshi Morwal</h3>
-                <p style="color:#3da3ff">Doctor</p>
-                <p>📍 Jaipur</p>
-                <button onclick="openModal('sakshi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sakshi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sakshi')">&times;</span>
-                    <img src="Sakshi.jpg" alt="Sakshi Morwal" />
-                    <h2>Sakshi Morwal</h2>
-                    <p style="color:#3da3ff">MBBS Doctor</p>
-                    <p>📍 Jaipur</p>
-                    <p>📞 +91 93144 38052</p>
-                    <h4>Parents</h4>
-                    <p>Ashok Morwal & Pooja Morwal</p>
-                    <h4>Hometown</h4>
-                    <p>Jhunjhunu (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 39 - Deepak Mamchand Varma -->
-            <div class="card" data-name="deepak varma">
-                <img src="Deepak.jpg" alt="Deepak Mamchand Varma" />
-                <h3>Deepak Mamchand Varma</h3>
-                <p style="color:#3da3ff">Lead Piping Engineer</p>
-                <p>📍 Pune</p>
-                <button onclick="openModal('deepak')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-deepak">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('deepak')">&times;</span>
-                    <img src="Deepak.jpg" alt="Deepak Mamchand Varma" />
-                    <h2>Deepak Mamchand Varma</h2>
-                    <p style="color:#3da3ff">Lead Piping Engineer</p>
-                    <p>📍 Pune</p>
-                    <p>📞 +91 91681 79181</p>
-                    <h4>Qualification</h4>
-                    <p>BE Mechanical + PG Diploma in Piping Engineering</p>
-                    <h4>Parents</h4>
-                    <p>Mamchand Varma & Manju Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Jhunjhunu (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 40 - CS Priyanka Ostwal -->
-            <div class="card" data-name="priyanka ostwal">
-                <img src="Priyanka.jpg" alt="CS Priyanka Ostwal" />
-                <h3>CS Priyanka Ostwal</h3>
-                <p style="color:#3da3ff">Company Secretary</p>
-                <p>📍 Kanjurmarg West, Mumbai</p>
-                <button onclick="openModal('priyanka')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-priyanka">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('priyanka')">&times;</span>
-                    <img src="Priyanka.jpg" alt="CS Priyanka Ostwal" />
-                    <h2>CS Priyanka Ostwal</h2>
-                    <p style="color:#3da3ff">Company Secretary</p>
-                    <p>📍 Kanjurmarg West, Mumbai</p>
-                    <p>📞 +91 94605 24050</p>
-                    <h4>Qualification</h4>
-                    <p>CS</p>
-                    <h4>Parents</h4>
-                    <p>Mr. Sunil Kumar Ostwal & Mrs. Mamta Ostwal</p>
-                    <h4>Hometown</h4>
-                    <p>Chittorgarh (Rajasthan)</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Member 41 - Urmila Verma -->
-            <!-- <div class="card" data-name="urmila">
-            <img src="Urmila.jpg" alt="Urmila Verma" />
-            <h3>Urmila Verma</h3>
-            <p style="color:#3da3ff">Model, Event Organizer, Entrepreneur</p>
-            <p>📍 Bhiwandi</p>
-            <button onclick="openModal('urmila')">Click to view details</button>
-        </div>
-        <div class="modal" id="profileModal-urmila">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('urmila')">&times;</span>
-                <img src="Urmila.jpg" alt="Urmila Verma" />
-                <h2>Urmila Verma</h2>
-                <p style="color:#3da3ff">Model, Event Organizer, Entrepreneur</p>
-                <p>📍 Bhiwandi</p>
-                <p>📞 +91 95613 20468</p>
-                <h4>Qualification</h4>
-                <p>HSC from Rajasthan</p>
-                <h4>Parents</h4>
-                <p>Devkilal Khereshia & Ramkishani Devi</p>
-                <h4>Hometown</h4>
-                <p>Kaseru, Mukundgarh (Rajasthan)</p>
-            </div>
-        </div> -->
-
-            <!-- Member 42 - Anil Kumar Kumawat -->
-            <div class="card" data-name="anil">
-                <img src="Anil.jpg" alt="Anil Kumar Kumawat" />
-                <h3>Anil Kumar Kumawat</h3>
-                <p style="color:#3da3ff">Life Coach / Trainer</p>
-                <p>📍 Jaipur</p>
-                <button onclick="openModal('anil')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-anil">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('anil')">&times;</span>
-                    <img src="Anil.jpg" alt="Anil Kumar Kumawat" />
-                    <h2>Anil Kumar Kumawat</h2>
-                    <p style="color:#3da3ff">Life Coach / Trainer</p>
-                    <p>📍 Jaipur</p>
-                    <p>📞 +91 98285 61706</p>
-                    <h4>Qualification</h4>
-                    <p>MBA</p>
-                    <h4>Parents</h4>
-                    <p>Navratan Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 43 - CA Devender Prajapat -->
-            <div class="card" data-name="devender">
-                <img src="Devender.jpg" alt="CA Devender Prajapat" />
-                <h3>CA Devender Prajapat</h3>
-                <p style="color:#3da3ff">Businessman (KD Cool Tecs P Ltd, Parth Infra LLP)</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('devender')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-devender">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('devender')">&times;</span>
-                    <img src="Devender.jpg" alt="CA Devender Prajapat" />
-                    <h2>CA Devender Prajapat</h2>
-                    <p style="color:#3da3ff">Businessman (KD Cool Tecs P Ltd, Parth Infra LLP)</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 +91 98198 21571</p>
-                    <h4>Qualification</h4>
-                    <p>Chartered Accountant</p>
-                    <h4>Parents</h4>
-                    <p>Late Shri Satyanarayan & Smt Kamal Devi Prajapat</p>
-                    <h4>Hometown</h4>
-                    <p>Jodhpur / Kuchaman, Nagour (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 44 - Piyush Sudhir Varma -->
-            <div class="card" data-name="piyush">
-                <img src="Piyush.jpg" alt="Piyush Sudhir Varma" />
-                <h3>Piyush Sudhir Varma</h3>
-                <p style="color:#3da3ff">Owner, The Mobile Hub</p>
-                <p>📍 Andheri East (JB Nagar)</p>
-                <button onclick="openModal('piyush')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-piyush">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('piyush')">&times;</span>
-                    <img src="Piyush.jpg" alt="Piyush Sudhir Varma" />
-                    <h2>Piyush Sudhir Varma</h2>
-                    <p style="color:#3da3ff">Owner, The Mobile Hub</p>
-                    <p>📍 Andheri East (JB Nagar)</p>
-                    <p>📞 +91 91675 57961</p>
-                    <h4>Qualification</h4>
-                    <p>Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Sudhir Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Nawalgarh (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 45 - IPS Vasant Pardeshi -->
-            <div class="card" data-name="vasant">
-                <img src="Vasant.jpg" alt="IPS Vasant Pardeshi" />
-                <h3>IPS Vasant Pardeshi</h3>
-                <p style="color:#3da3ff">Additional Commissioner of Police</p>
-                <p>📍 Pimpri Chinchwad, Pune</p>
-                <button onclick="openModal('vasant')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-vasant">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('vasant')">&times;</span>
-                    <img src="Vasant.jpg" alt="IPS Vasant Pardeshi" />
-                    <h2>IPS Vasant Pardeshi</h2>
-                    <p style="color:#3da3ff">Additional Commissioner of Police</p>
-                    <p>📍 Pimpri Chinchwad, Pune</p>
-                    <p>📞 +91 97658 21313</p>
-                    <h4>Qualification</h4>
-                    <p>M.Sc</p>
-                    <h4>Hometown</h4>
-                    <p>Jamkhed, Ahilyanagar (Maharashtra)</p>
-                </div>
-            </div>
-
-
-
-
-
-
-            <!-- Member 46 - Ameet Babulal Verma -->
-            <div class="card" data-name="ameet">
-                <img src="Ameet.jpg" alt="Ameet Babulal Verma" />
-                <h3>Ameet Babulal Verma</h3>
-                <p style="color:#3da3ff">Businessman - Laboratory Equipment</p>
-                <p>📍 Hyderabad</p>
-                <button onclick="openModal('ameet')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-ameet">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ameet')">&times;</span>
-                    <img src="Ameet.jpg" alt="Ameet Babulal Verma" />
-                    <h2>Ameet Babulal Verma</h2>
-                    <p style="color:#3da3ff">Businessman - www.precisechromatography.com</p>
-                    <p>📍 Hyderabad</p>
-                    <p>📞 9985 999 317 / 900 405 0007</p>
-                    <p>📧 info@precisechromatography.com</p>
-                    <p>📸 <a href="https://www.instagram.com/ameetverma1983" target="_blank">Instagram</a></p>
-                    <h4>Qualification</h4>
-                    <p>Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Late Babulal Ranjeet Verma</p>
-                    <h4>Hometown</h4>
-                    <p>Chhavshri, Jhunjhunu (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 47 - Dr. Namita Kumawat -->
-            <div class="card" data-name="namita">
-                <img src="Namita.jpg" alt="Dr. Namita Kumawat" />
-                <h3>Dr. Namita Kumawat</h3>
-                <p style="color:#3da3ff">Life Leadership Coach, Corporate Trainer</p>
-                <p>📍 Indore</p>
-                <button onclick="openModal('namita')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-namita">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('namita')">&times;</span>
-                    <img src="Namita.jpg" alt="Dr. Namita Kumawat" />
-                    <h2>Dr. Namita Kumawat</h2>
-                    <p style="color:#3da3ff">Corporate Trainer | Life Coach</p>
-                    <p>📍 Indore</p>
-                    <p>📞 9171712555</p>
-                    <p>🔗 <a href="https://linkedin.com/in/drnamitakumawat" target="_blank">LinkedIn</a></p>
-                    <h4>Qualification</h4>
-                    <p>Ph.D. (Management), ICF PCC, MGSCC, NLP Practitioner</p>
-                    <h4>Parents</h4>
-                    <p>Shri Pannalal Kumawat & Smt. Rampyari Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Maganpura, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 48 - Urmila Verma (Achievements) -->
-            <div class="card" data-name="urmila2">
-                <img src="Urmila.jpg" alt="Urmila Verma" />
-                <h3>Urmila Verma</h3>
-                <p style="color:#3da3ff">Model, Event Organizer, Entrepreneur</p>
-                <p>📍 Bhiwandi</p>
-                <button onclick="openModal('urmila2')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-urmila2">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('urmila2')">&times;</span>
-                    <img src="Urmila.jpg" alt="Urmila Verma" />
-                    <h2>Urmila Verma</h2>
-                    <p style="color:#3da3ff">Model | Entrepreneur | Event Organizer</p>
-                    <p>📍 Bhiwandi</p>
-                    <p>📞 9561320468</p>
-                    <p>📸 <a href="https://www.instagram.com/urmiverma22" target="_blank">Instagram</a> |
-                        <a href="https://www.facebook.com/share/196M7EjHur/" target="_blank">Facebook</a>
-                    </p>
-                    <h4>Achievements</h4>
-                    <ul>
-                        <li>Glamour India Season 2 Winner</li>
-                        <li>Mrs. International Icon World 2023 - 2nd Runner-Up</li>
-                        <li>Dadasaheb Phalke Award 2023</li>
-                        <li>Model of Nimco Soap</li>
-                        <li>Organized multiple events & fashion shows</li>
-                    </ul>
-                    <h4>Hometown</h4>
-                    <p>Kaseru, Mukundgarh (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 49 - Ashok Gumanram Kumawat -->
-            <div class="card" data-name="ashok">
-                <img src="Ashok.jpg" alt="Ashok Gumanram Kumawat" />
-                <h3>Ashok Gumanram Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant, DISA</p>
-                <p>📍 Bhayander East</p>
-                <button onclick="openModal('ashok')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-ashok">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ashok')">&times;</span>
-                    <img src="Ashok.jpg" alt="Ashok Gumanram Kumawat" />
-                    <h2>Ashok Gumanram Kumawat</h2>
-                    <p style="color:#3da3ff">CA | DISA | BCom</p>
-                    <p>📍 Bhayander East</p>
-                    <p>📞 9870688805</p>
-                    <p>🗳️ Member of WIRC of ICAI (2025–29)</p>
-                    <h4>Parents</h4>
-                    <p>Gumanram Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Didwana (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 50 - Suman Varma -->
-            <div class="card" data-name="suman">
-                <img src="Suman.jpg" alt="Suman Varma" />
-                <h3>Suman Varma</h3>
-                <p style="color:#3da3ff">Personal Fitness & Yoga Trainer</p>
-                <p>📍 Dahisar, Mumbai</p>
-                <button onclick="openModal('suman')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-suman">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('suman')">&times;</span>
-                    <img src="Suman.jpg" alt="Suman Varma" />
-                    <h2>Suman Varma</h2>
-                    <p style="color:#3da3ff">Fitness & Yoga Trainer</p>
-                    <p>📍 Dahisar, Mumbai</p>
-                    <p>📞 9819124692</p>
-                    <p>📧 sumanvarma5000@gmail.com</p>
-                    <h4>Qualification</h4>
-                    <p>BA</p>
-                    <h4>Parents</h4>
-                    <p>Laxminarayan Varma & Sushila Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Danta Ramgarh, Sikar (Rajasthan)</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Member 51 - Sandip -->
-            <div class="card" data-name="sandip">
-                <img src="Sandip.jpg" alt="Sandip Hodkhasa" />
-                <h3>Sandip Hodkhasa</h3>
-                <p style="color:#3da3ff">Mechanical Engineer</p>
-                <p>📍 Los Angeles, CA, USA</p>
-                <button onclick="openModal('sandip')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sandip">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sandip')">&times;</span>
-                    <img src="Sandip.jpg" alt="Sandip Hodkhasa" />
-                    <h2>Sandip Hodkhasa</h2>
-                    <p style="color:#3da3ff">Mechanical Engineer</p>
-                    <p>📍 Los Angeles, CA, USA</p>
-                    <p>📞 +1 323 203 7211</p>
-                    <h4>Qualification</h4>
-                    <p>MS, Engineering</p>
-                    <h4>Parents</h4>
-                    <p>Ghanashyam Chejara & Anguri Devi Chejara</p>
-                    <h4>Hometown</h4>
-                    <p>Nawalgarh (Rajasthan)</p>
-                    <h4>Social</h4>
-                    <p>Instagram: <a href="https://www.instagram.com/shodkhasa" target="_blank">shodkhasa</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/shodkhasa" target="_blank">View Profile</a></p>
-                </div>
-            </div>
-
-            <!-- Member 52 - Priyanka -->
-            <div class="card" data-name="priyanka3">
-                <img src="Priyanka3.png" alt="Priyanka Verma" />
-                <h3>Priyanka Verma</h3>
-                <p style="color:#3da3ff">Anchor & Businesswoman</p>
-                <p>📍 Jaipur</p>
-                <button onclick="openModal('priyanka3')">Click to view details</button>
-            </div>
-
-
-            <div class="modal" id="profileModal-priyanka3">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('priyanka3')">&times;</span>
-                    <img src="Priyanka3.png" alt="Priyanka Verma" />
-                    <h2>Priyanka Verma</h2>
-                    <p style="color:#3da3ff">Anchor & Businesswoman</p>
-                    <p>📍 Jaipur</p>
-                    <p>📞 9828069333</p>
-                    <h4>Qualification</h4>
-                    <p>B.Ed, M.A., LLB</p>
-                    <h4>Parents</h4>
-                    <p>Cirangi Lal Sirswa</p>
-                    <h4>Hometown</h4>
-                    <p>Dantaramgarh (Rajasthan)</p>
-                    <h4>Business</h4>
-                    <p><strong>Krishna Impex</strong> — Manufacturer & Exporter of Semi Precious Stone Products</p>
-                    <ul>
-                        <li><a href="https://krishnaimpex26.linker.store/" target="_blank">Shop Online (India)</a></li>
-                        <li><a href="https://www.ebay.com/usr/krishnaimpex26" target="_blank">Shop Globally (eBay)</a>
-                        </li>
-                        <li><a href="https://www.instagram.com/krishnaimpexjpr?igsh=bTg3Z2Z2N2dxc2d3"
-                                target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/share/19pCUpZHcV/" target="_blank">Facebook</a></li>
-                        <li><a href="https://g.co/kgs/RJs4mCG" target="_blank">Google Business</a></li>
-                    </ul>
-                    <p>Instagram (Personal): <a
-                            href="https://www.instagram.com/anchor_priyanka.kumawat?igsh=NnZnc3hkMnpxcXhw"
-                            target="_blank">@anchor_priyanka.kumawat</a></p>
-                    <h4>Contact for</h4>
-                    <p>B2B / B2C / Global Business Opportunities – 📞 9314370944</p>
-                </div>
-            </div>
-
-
-            <!-- Member 53 - Bharti -->
-            <div class="card" data-name="bharti">
-                <img src="Bharti.jpg" alt="Bharti Kumawat" />
-                <h3>Bharti Kumawat</h3>
-                <p style="color:#3da3ff">Fashion Designer & Stylist</p>
-                <p>📍 Jaipur</p>
-                <button onclick="openModal('bharti')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-bharti">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('bharti')">&times;</span>
-                    <img src="Bharti.jpg" alt="Bharti Kumawat" />
-                    <h2>Bharti Kumawat</h2>
-                    <p style="color:#3da3ff">Fashion Designer & Stylist</p>
-                    <p>📍 Jaipur</p>
-                    <p>📞 8769990160</p>
-                    <h4>Qualification</h4>
-                    <p>Bachelor’s in Fashion Designing (Pearl Academy, Jaipur)</p>
-                    <h4>Parents</h4>
-                    <p>Rambabu Verma & Madhu Verma</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur (Rajasthan)</p>
-                    <p>Instagram: <a href="https://linktr.ee/bamor.official" target="_blank">bamor.official</a></p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Member 54 - Puja -->
-            <div class="card" data-name="puja">
-                <img src="Puja.jpg" alt="Puja Varma" />
-                <h3>Puja Varma</h3>
-                <p style="color:#3da3ff">Architect & Interior Designer</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('puja')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-puja">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('puja')">&times;</span>
-                    <img src="Puja.jpg" alt="Puja Varma" />
-                    <h2>Puja Varma</h2>
-                    <p style="color:#3da3ff">Principal Designer at Magus Associates</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 +91 9820178973</p>
-                    <p>📧 puja.magus@gmail.com</p>
-                    <h4>Qualification</h4>
-                    <p>B.Arch (Mumbai Univ), PG in Construction Mgmt (NICMAR)</p>
-                    <h4>Parents</h4>
-                    <p>Hemant Varma & Manjusha Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Nawalgarh (Rajasthan)</p>
-                    <p>Instagram: <a href="https://www.instagram.com/magus_associates"
-                            target="_blank">@magus_associates</a>
-                    </p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/puja-varma" target="_blank">puja-varma</a></p>
-                </div>
-            </div>
-
-
-
-            <!-- Member 55 - Pushpendra -->
-            <div class="card" data-name="pushpendra">
-                <img src="Pushpendra.jpg" alt="Pushpendra Kumawat" />
-                <h3>Pushpendra Kumawat</h3>
-                <p style="color:#3da3ff">Businessman & Financial Advisor</p>
-                <p>📍 Jaipur</p>
-                <button onclick="openModal('pushpendra')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-pushpendra">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('pushpendra')">&times;</span>
-                    <img src="Pushpendra.jpg" alt="Pushpendra Kumawat" />
-                    <h2>Pushpendra Kumawat</h2>
-                    <p style="color:#3da3ff">Mutual Fund, Health Insurance, LIC</p>
-                    <p>📍 Jaipur</p>
-                    <p>📞 9314370944</p>
-                    <h4>Qualification</h4>
-                    <p>M.I.B, B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Roopnarayanji Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur (Rajasthan)</p>
-                    <p>Instagram: <a href="https://www.instagram.com/krishnaimpexjpr"
-                            target="_blank">@krishnaimpexjpr</a>
-                    </p>
-                </div>
-            </div>
-
-
-
-            <!-- Member 56 - Jitendra -->
-            <div class="card" data-name="jitendra3">
-                <img src="Jitendra3.png" alt="Jitendra Kumar Kumawat" />
-                <h3>Jitendra Kumawat</h3>
-                <p style="color:#3da3ff">Interior Designer</p>
-                <p>📍 Mumbai | Pune</p>
-                <button onclick="openModal('jitendra3')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-jitendra3">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('jitendra3')">&times;</span>
-                    <img src="Jitendra3.png" alt="Jitendra Kumar Kumawat" />
-                    <h2>Jitendra Kumar Kumawat</h2>
-                    <p style="color:#3da3ff">Interior Designer</p>
-                    <p>📍 Mumbai | Pune</p>
-                    <p>📞 9024760775</p>
-                    <h4>Qualification</h4>
-                    <p>Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Kailash Chand Kumawat & Mishri Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Rajpura, Sikar (Rajasthan)</p>
-                    <p>Instagram: <a href="https://www.instagram.com/jitu_kumawat1375"
-                            target="_blank">@jitu_kumawat1375</a>
-                    </p>
-                </div>
-            </div>
-
-
-
-            <!-- Member 57 - Sudha -->
-            <div class="card" data-name="sudha">
-                <img src="Sudha.jpg" alt="Sudha Kumawat" />
-                <h3>Sudha Kumawat</h3>
-                <p style="color:#3da3ff">Nursing Officer</p>
-                <p>📍 Didwana</p>
-                <button onclick="openModal('sudha')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sudha">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sudha')">&times;</span>
-                    <img src="Sudha.jpg" alt="Sudha Kumawat" />
-                    <h2>Sudha Kumawat</h2>
-                    <p style="color:#3da3ff">Nursing Officer</p>
-                    <p>📍 Didwana</p>
-                    <h4>Qualification</h4>
-                    <p>MA in Political Science</p>
-                    <h4>Parents</h4>
-                    <p>Shyam Sunder & Munni Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Sikar (Rajasthan)</p>
-                    <p>Instagram: <a href="https://www.instagram.com/su.dha1754" target="_blank">@su.dha1754</a></p>
-                </div>
-            </div>
-
-
-            <!-- Member 58 - Mamta -->
-            <div class="card" data-name="mamta">
-                <img src="Mamta.jpg" alt="Mamta Ambere" />
-                <h3>Mamta Ambere</h3>
-                <p style="color:#3da3ff">Senior Consultant at EY</p>
-                <p>📍 Pune</p>
-                <button onclick="openModal('mamta')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-mamta">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('mamta')">&times;</span>
-                    <img src="Mamta.jpg" alt="Mamta Ambere" />
-                    <h2>Mamta Ambere</h2>
-                    <p style="color:#3da3ff">Senior Consultant – Ernst & Young</p>
-                    <p>📍 Pune</p>
-                    <p>📞 8989537222</p>
-                    <h4>Qualification</h4>
-                    <p>Bachelor’s in Engineering</p>
-                    <h4>Parents</h4>
-                    <p>Chandrakant Ambere</p>
-                </div>
-            </div>
-
-
-
-
-            <!-- Member 59 - Shivangi -->
-            <div class="card" data-name="shivangi">
-                <img src="Shivangi.jpg" alt="Shivangi Ajmera" />
-                <h3>Shivangi Ajmera</h3>
-                <p style="color:#3da3ff">Asst. Town Planner</p>
-                <p>📍 Kota</p>
-                <button onclick="openModal('shivangi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-shivangi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('shivangi')">&times;</span>
-                    <img src="Shivangi.jpg" alt="Shivangi Ajmera" />
-                    <h2>Shivangi Ajmera</h2>
-                    <p style="color:#3da3ff">Asst. Town Planner – Kota Dev. Authority</p>
-                    <p>📍 Kota, Rajasthan</p>
-                    <p>📞 9427911379</p>
-                    <h4>Qualification</h4>
-                    <p>Post Graduation (M.Plan)</p>
-                    <h4>Parents</h4>
-                    <p>Mukesh Ajmera & Sapna Ajmera</p>
-                    <h4>Hometown</h4>
-                    <p>Kota (Rajasthan)</p>
-                </div>
-            </div>
-
-
-
-            <!-- Member 60 - Stuti -->
-            <div class="card" data-name="stuti">
-                <img src="Stuti.jpg" alt="Stuti Ajmera" />
-                <h3>Stuti Ajmera</h3>
-                <p style="color:#3da3ff">Brand & Marketing Manager</p>
-                <p>📍 Gurgaon</p>
-                <button onclick="openModal('stuti')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-stuti">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('stuti')">&times;</span>
-                    <img src="Stuti.jpg" alt="Stuti Ajmera" />
-                    <h2>Stuti Ajmera</h2>
-                    <p style="color:#3da3ff">Brand & Marketing Manager</p>
-                    <p>📍 Gurgaon</p>
-                    <p>📞 8454990399</p>
-                    <h4>Qualification</h4>
-                    <p>MBA – IIM Kashipur</p>
-                    <h4>Parents</h4>
-                    <p>Mukesh Ajmera & Sapna Ajmera</p>
-                    <h4>Hometown</h4>
-                    <p>Kota (Rajasthan)</p>
-                </div>
-            </div>
-
-
-
-
-
-
-            <!-- Member 61 - Kirann Kumawat -->
-            <div class="card" data-name="kirann">
-                <img src="Kirann.jpg" alt="Kirann Kumawat" />
-                <h3>Kirann Kumawat</h3>
-                <p style="color:#3da3ff">Entrepreneur - Jewellery & Clothing</p>
-                <p>📍 Mira Road</p>
-                <button onclick="openModal('kirann')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-kirann">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('kirann')">&times;</span>
-                    <img src="Kirann.jpg" alt="Kirann Kumawat" />
-                    <h2>Kirann Kumawat</h2>
-                    <p style="color:#3da3ff">Entrepreneur - Jewellery & Clothing</p>
-                    <p>📍 Mira Road</p>
-                    <p>📞 9967645776</p>
-                    <h4>Qualification</h4>
-                    <p>HSC</p>
-                    <h4>Parents</h4>
-                    <p>Narulalji Tumwal & Malidevi</p>
-                    <h4>Hometown</h4>
-                    <p>Mandawa (Jhunjhunu), Rajasthan</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/kirannkumawat" target="_blank">Instagram Profile</a></p>
-                </div>
-            </div>
-
-            <!-- Member 62 - Kiran Kumari -->
-            <div class="card" data-name="kiran">
-                <img src="Kiran.jpg" alt="Kiran Kumari" />
-                <h3>Kiran Kumari</h3>
-                <p style="color:#3da3ff">Engineer at Mercedes Benz R&D</p>
-                <p>📍 Pune</p>
-                <button onclick="openModal('kiran')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-kiran">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('kiran')">&times;</span>
-                    <img src="Kiran.jpg" alt="Kiran Kumari" />
-                    <h2>Kiran Kumari</h2>
-                    <p style="color:#3da3ff">Engineer - Mercedes Benz R&D</p>
-                    <p>📍 Pune</p>
-                    <p>📞 9015549481</p>
-                    <h4>Qualification</h4>
-                    <p>M.Tech in Design Engineering (BITS Pilani)</p>
-                    <h4>Parents</h4>
-                    <p>Jagdish Sangar</p>
-                    <h4>Hometown</h4>
-                    <p>Bilara, Jodhpur (Rajasthan)</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/its_kiran_kumawat_" target="_blank">@its_kiran_kumawat_</a>
-                    </p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/kiran-sangar" target="_blank">LinkedIn Profile</a></p>
-                </div>
-            </div>
-
-            <!-- Member 63 - Dharmesh Kumawat -->
-            <div class="card" data-name="dharmesh">
-                <img src="Dharmesh.jpg" alt="Dharmesh Kumawat" />
-                <h3>Dharmesh Kumawat</h3>
-                <p style="color:#3da3ff">Architect</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('dharmesh')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-dharmesh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('dharmesh')">&times;</span>
-                    <img src="Dharmesh.jpg" alt="Dharmesh Kumawat" />
-                    <h2>Dharmesh Kumawat</h2>
-                    <p style="color:#3da3ff">Architect</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9920397135</p>
-                    <h4>Qualification</h4>
-                    <p>B.Arch</p>
-                    <h4>Parents</h4>
-                    <p>Kailash Kumawat & Hemlata Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/dharmessh_kumawatt" target="_blank">@dharmessh_kumawatt</a>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Member 64 - Nikita & Ishwar -->
-            <div class="card" data-name="nikita">
-                <img src="Nikita.jpg" alt="Nikita & Ishwar Kumawat" />
-                <h3>Nikita & Ishwar Kumawat</h3>
-                <p style="color:#3da3ff">Business - Electronics</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('nikita')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-nikita">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('nikita')">&times;</span>
-                    <img src="Nikita.jpg" alt="Nikita & Ishwar Kumawat" />
-                    <h2>Nikita & Ishwar Kumawat</h2>
-                    <p style="color:#3da3ff">Business - Electronics</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9987699944</p>
-                    <h4>Qualification</h4>
-                    <p>B.Tech</p>
-                    <h4>Hometown</h4>
-                    <p>Phulera, Sirohi (Rajasthan)</p>
-                    <h4>Website</h4>
-                    <p><a href="https://www.bwtech.in" target="_blank">www.bwtech.in</a></p>
-                </div>
-            </div>
-
-            <!-- Member 65 - CA Mukesh Kumawat -->
-            <div class="card" data-name="mukesh2">
-                <img src="Mukesh.jpg" alt="Mukesh Kumawat" />
-                <h3>CA Mukesh Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('mukesh2')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-mukesh2">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('mukesh2')">&times;</span>
-                    <img src="Mukesh.jpg" alt="Mukesh Kumawat" />
-                    <h2>CA Mukesh Kumawat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9116957131</p>
-                    <h4>Parents</h4>
-                    <p>Gopal Kumawat & Santra Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Sikar, Rajasthan</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/camukesh_kumawat" target="_blank">@camukesh_kumawat</a></p>
-                </div>
-            </div>
-
-            <!-- Member 66 is duplicate of 65 and omitted -->
-
-            <!-- Member 67 - Vikrant Kumawat -->
-            <div class="card" data-name="vikrant">
-                <img src="Vikrant.jpg" alt="Vikrant Kumawat" />
-                <h3>Vikrant Kumawat</h3>
-                <p style="color:#3da3ff">Business - Building Material</p>
-                <p>📍 Navi Mumbai</p>
-                <button onclick="openModal('vikrant')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-vikrant">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('vikrant')">&times;</span>
-                    <img src="Vikrant.jpg" alt="Vikrant Kumawat" />
-                    <h2>Vikrant Kumawat</h2>
-                    <p style="color:#3da3ff">Business - Building Material</p>
-                    <p>📍 Navi Mumbai</p>
-                    <p>📞 986745515 / 9323303235</p>
-                    <p>📱 WhatsApp: 9867455215</p>
-                    <h4>Qualification</h4>
-                    <p>MBA</p>
-                    <h4>Parents</h4>
-                    <p>Shri Vijay Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Beawar, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 68 - Puneet Kumawat -->
-            <div class="card" data-name="puneet2">
-                <img src="Puneet2.png" alt="Puneet Kumawat" />
-                <h3>Puneet Kumawat</h3>
-                <p style="color:#3da3ff">Education Sector</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('puneet2')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-puneet2">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('puneet2')">&times;</span>
-                    <img src="Puneet2.png" alt="Puneet Kumawat" />
-                    <h2>Puneet Kumawat</h2>
-                    <p style="color:#3da3ff">Working in Education Sector</p>
-                    <p>📍 Mumbai</p>
-                    <p>📧 puneet.v.kumawat@gmail.com</p>
-                    <p>📞 8551896555</p>
-                    <h4>Qualification</h4>
-                    <p>MBA</p>
-                    <h4>Parents</h4>
-                    <p>Shri Vijay Kumar Kumawat & Smt. Shobha Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Beawar, Rajasthan</p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/puneet-kumawat" target="_blank">LinkedIn Profile</a></p>
-                </div>
-            </div>
-
-            <!-- Member 69 - Shyam Kumawat -->
-            <div class="card" data-name="shyam">
-                <img src="Shyam.jpg" alt="Shyam Kumawat" />
-                <h3>Shyam Kumawat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('shyam')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-shyam">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('shyam')">&times;</span>
-                    <img src="Shyam.jpg" alt="Shyam Kumawat" />
-                    <h2>Shyam Kumawat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9660375127</p>
-                    <h4>Parents</h4>
-                    <p>Ramswaroop Kumawat & Munni Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Sikar, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 70 - Mansi Singh -->
-            <div class="card" data-name="mansi">
-                <img src="Mansi.jpg" alt="Mansi Singh" />
-                <h3>Mansi Singh</h3>
-                <p style="color:#3da3ff">Ed-tech & Airbnb Host</p>
-                <p>📍 Gurugram</p>
-                <button onclick="openModal('mansi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-mansi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('mansi')">&times;</span>
-                    <img src="Mansi.jpg" alt="Mansi Singh" />
-                    <h2>Mansi Singh</h2>
-                    <p style="color:#3da3ff">Ed-tech, Airbnb Host</p>
-                    <p>📍 Gurugram</p>
-                    <h4>Qualification</h4>
-                    <p>B.Tech</p>
-                    <h4>Parents</h4>
-                    <p>Arti & Rajesh Singh</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/mansi-singh-action-taker/" target="_blank">LinkedIn
-                            Profile</a>
-                    </p>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="card" data-name="vinita">
-                <img src="Vinita.jpg" alt="Vinita Chejara" />
-                <h3>Vinita Chejara</h3>
-                <p style="color:#3da3ff">Banker</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('vinita')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-vinita">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('vinita')">&times;</span>
-                    <img src="Vinita.jpg" alt="Vinita Chejara" />
-                    <h2>Vinita Chejara</h2>
-                    <p style="color:#3da3ff">Banker</p>
-                    <p>📍 Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>M.Com</p>
-                    <h4>Parents</h4>
-                    <p>Ramcharan Chejara & Manju Chejara</p>
-                    <h4>Hometown</h4>
-                    <p>Mukundgarh, Rajasthan</p>
-                    <p>📞 9137792334</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/witty_vinnie" target="_blank">witty_vinnie</a></p>
-                </div>
-            </div>
-
-
-
-            <div class="card" data-name="sneha">
-                <img src="Sneha.jpg" alt="Sneha Vinod Varma" />
-                <h3>Sneha Vinod Varma</h3>
-                <p style="color:#3da3ff">Finance Executive</p>
-                <p>📍 Virar, Mumbai</p>
-                <button onclick="openModal('sneha')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sneha">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sneha')">&times;</span>
-                    <img src="Sneha.jpg" alt="Sneha Vinod Varma" />
-                    <h2>Sneha Vinod Varma</h2>
-                    <p style="color:#3da3ff">Finance Executive (AR)</p>
-                    <p>📍 Virar, Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>MBA (Banking & Finance)</p>
-                    <h4>Parents</h4>
-                    <p>Vinod Tarachand Varma & Seema Vinod Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Mandrella, Jhunjhunu</p>
-                    <p>📞 7875807521</p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/sneha-varma0400591a2" target="_blank">LinkedIn Profile</a>
-                    </p>
-                </div>
-            </div>
-
-
-
-            <div class="card" data-name="nirma">
-                <img src="Nirma.jpg" alt="Nirma Kumawat" />
-                <h3>Nirma Kumawat</h3>
-                <p style="color:#3da3ff">Makeup & Hair Stylist</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('nirma')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-nirma">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('nirma')">&times;</span>
-                    <img src="Nirma.jpg" alt="Nirma Kumawat" />
-                    <h2>Nirma Kumawat</h2>
-                    <p style="color:#3da3ff">Makeup & Hair Stylist</p>
-                    <p>📍 Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>M.Com</p>
-                    <h4>Parents</h4>
-                    <p>Radheshyam Kumawat & Geeta Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Pali, Rajasthan</p>
-                    <p>📞 7769947624</p>
-                    <h4>Email</h4>
-                    <p>nirmakumawat28@gmail.com</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/makeup.hairbyniru.k" target="_blank">Instagram Profile</a></p>
-                </div>
-            </div>
-
-
-            <div class="card" data-name="aman">
-                <img src="Aman.jpg" alt="Aman Kumawat" />
-                <h3>Aman Kumawat</h3>
-                <p style="color:#3da3ff">Yoga Teacher & Hotelier</p>
-                <p>📍 Manali & Jaipur</p>
-                <button onclick="openModal('aman')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-aman">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('aman')">&times;</span>
-                    <img src="Aman.jpg" alt="Aman Kumawat" />
-                    <h2>Aman Kumawat</h2>
-                    <p style="color:#3da3ff">Yoga Teacher & Hotelier</p>
-                    <p>📍 Manali & Jaipur</p>
-                    <h4>Qualification</h4>
-                    <p>MA in Yoga</p>
-                    <h4>Parents</h4>
-                    <p>Ajay Verma & Manju Verma</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <!-- Member 76 - Praveen Ghorela -->
-            <div class="card" data-name="praveen">
-                <img src="Praveen.jpg" alt="Praveen Ghorela" />
-                <h3>Praveen Ghorela</h3>
-                <p style="color:#3da3ff">Banker (RM, Yes Bank)</p>
-                <p>📍 Malad, Mumbai</p>
-                <button onclick="openModal('praveen')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-praveen">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('praveen')">&times;</span>
-                    <img src="Praveen.jpg" alt="Praveen Ghorela" />
-                    <h2>Praveen Ghorela</h2>
-                    <p style="color:#3da3ff">Banker – RM, Yes Bank</p>
-                    <p>📍 Malad, Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>Graduation</p>
-                    <h4>Parents</h4>
-                    <p>Prabhudayal S. Ghorela</p>
-                    <h4>Hometown</h4>
-                    <p>Kolsiya, Nawalgarh – Rajasthan</p>
-                    <p>📞 9619974942</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/praveenghorela" target="_blank">Instagram</a></p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/praveen-ghorela0b1a58168" target="_blank">LinkedIn</a></p>
-                </div>
-            </div>
-
-            <!-- Member 77 - Prahlad Sahai Kumhar -->
-            <div class="card" data-name="prahlad">
-                <img src="Prahlad.jpg" alt="Prahlad Kumhar" />
-                <h3>Prahlad Kumhar</h3>
-                <p style="color:#3da3ff">CA</p>
-                <p>📍 Bhayandar East, Thane</p>
-                <button onclick="openModal('prahlad')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-prahlad">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('prahlad')">&times;</span>
-                    <img src="Prahlad.jpg" alt="Prahlad Kumhar" />
-                    <h2>Prahlad Sahai Kumhar</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Bhayandar East, Thane</p>
-                    <h4>Qualification</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Sundar Lal Kumhar & Geeta Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                    <p>📞 9022717485</p>
-                </div>
-            </div>
-
-            <!-- Member 78 - Neha Vinod Varma -->
-            <div class="card" data-name="neha">
-                <img src="Neha.jpg" alt="Neha Vinod Varma" />
-                <h3>Neha Vinod Varma</h3>
-                <p style="color:#3da3ff">Ecommerce Executive – Celio</p>
-                <p>📍 Virar, Mumbai</p>
-                <button onclick="openModal('neha')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-neha">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('neha')">&times;</span>
-                    <img src="Neha.jpg" alt="Neha Vinod Varma" />
-                    <h2>Neha Vinod Varma</h2>
-                    <p style="color:#3da3ff">Ecommerce Executive – Celio</p>
-                    <p>📍 Virar, Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Vinod Tarachand Varma & Seema Vinod Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Mandrella, Jhunjhunu</p>
-                    <p>📞 7414999625</p>
-                </div>
-            </div>
-
-            <!-- Member 79 - Suresh Kumawat -->
-            <div class="card" data-name="suresh">
-                <img src="Suresh.jpg" alt="Suresh Kumawat" />
-                <h3>Suresh Kumawat</h3>
-                <p style="color:#3da3ff">Accounts Head</p>
-                <p>📍 Borivali, Mumbai</p>
-                <button onclick="openModal('suresh')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-suresh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('suresh')">&times;</span>
-                    <img src="Suresh.jpg" alt="Suresh Kumawat" />
-                    <h2>Suresh Kumawat</h2>
-                    <p style="color:#3da3ff">Accounts Head, Samurai Securities Pvt Ltd</p>
-                    <p>📍 Borivali, Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>CA Finalist</p>
-                    <h4>Parents</h4>
-                    <p>Prabhu Dayal Kumawat & Sumitra Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Luniyawas, near Renwal (Present: Hathoj, Kalwar Road)</p>
-                    <p>📞 8767564491</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/_k_suresh_" target="_blank">_k_suresh_</a></p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/suresh-kumavat" target="_blank">LinkedIn</a></p>
-                </div>
-            </div>
-
-            <!-- Member 80 - Tanishq Varma -->
-            <div class="card" data-name="tanishq">
-                <img src="Profile.png" alt="Tanishq Varma" />
-                <h3>Tanishq Varma</h3>
-                <p style="color:#3da3ff">Investment Banker</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('tanishq')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-tanishq">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('tanishq')">&times;</span>
-                    <img src="Profile.png" alt="Tanishq Varma" />
-                    <h2>Tanishq Pankaj Varma</h2>
-                    <p style="color:#3da3ff">Investment Banker</p>
-                    <p>📍 Mumbai</p>
-                    <h4>Qualification</h4>
-                    <p>B.Com (NM College) / CA Finalist</p>
-                    <h4>Parents</h4>
-                    <p>Pankaj Brijlal Varma & Kavita Pankaj Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur/Nawalgarh</p>
-                    <p>📞 +91 8169346983</p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/tanishq-varma" target="_blank">LinkedIn Profile</a></p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-            <!-- Member 81 - Jitendra Kumavat -->
-            <div class="card" data-name="jitendra2">
-                <img src="Jitendra2.jpg" alt="Jitendra Kumavat" />
-                <h3>Jitendra Kumavat</h3>
-                <p style="color:#3da3ff">Chartered Accountant (KPMG)</p>
-                <p>📍 Borivali (West), Mumbai</p>
-                <button onclick="openModal('jitendra2')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-jitendra2">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('jitendra2')">&times;</span>
-                    <img src="Jitendra2.jpg" alt="Jitendra Kumavat" />
-                    <h2>Jitendra Kumavat</h2>
-                    <p style="color:#3da3ff">CA at KPMG</p>
-                    <p>📍 Borivali (West), Mumbai</p>
-                    <p>📞 7208517560</p>
-                    <h4>Qualification</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Prabhu Dayal Kumavat & Sumitra Kumavat</p>
-                    <h4>Hometown</h4>
-                    <p>Luniyawas near Renwal, Rajasthan</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/jitu_k28" target="_blank">jitu_k28</a></p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/jitendra-kumavat-a3863717a" target="_blank">LinkedIn
-                            Profile</a>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Member 82 - CA Dharmendra Kumar -->
-            <div class="card" data-name="dharmendra">
-                <img src="Dharmendra.jpg" alt="CA Dharmendra Kumar" />
-                <h3>CA Dharmendra Kumar</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Vile Parle, Mumbai</p>
-                <button onclick="openModal('dharmendra')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-dharmendra">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('dharmendra')">&times;</span>
-                    <img src="Dharmendra.jpg" alt="CA Dharmendra Kumar" />
-                    <h2>CA Dharmendra Kumar</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Vile Parle, Mumbai</p>
-                    <p>📞 6376965658</p>
-                    <h4>Qualification</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Ram Lal Kowal</p>
-                    <h4>Hometown</h4>
-                    <p>Gudha Gorji (Jhunjhunu), Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 83 - Rahul Kumawat -->
-            <div class="card" data-name="rahul">
-                <img src="Rahul.jpg" alt="Rahul Kumawat" />
-                <h3>Rahul Kumawat</h3>
-                <p style="color:#3da3ff">Designer</p>
-                <p>📍 Malad, Mumbai</p>
-                <button onclick="openModal('rahul')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-rahul">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('rahul')">&times;</span>
-                    <img src="Rahul.jpg" alt="Rahul Kumawat" />
-                    <h2>Rahul Kumawat</h2>
-                    <p style="color:#3da3ff">Designer</p>
-                    <p>📍 Malad, Mumbai</p>
-                    <p>📞 8239618546</p>
-                    <h4>Qualification</h4>
-                    <p>BBA</p>
-                    <h4>Parents</h4>
-                    <p>Radheshyam Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Nawalgarh, Rajasthan</p>
-                    <h4>Instagram</h4>
-                    <p><a href="https://www.instagram.com/_rahul_guri" target="_blank">@_rahul_guri</a></p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/rahul-guri-566933238" target="_blank">LinkedIn Profile</a>
-                    </p>
-                    <h4>Website</h4>
-                    <p><a href="https://pinnacledigitally.com" target="_blank">pinnacledigitally.com</a></p>
-                </div>
-            </div>
-
-            <!-- Member 84 - Dr Kasturi Kurhade -->
-            <div class="card" data-name="kasturi">
-                <img src="Kasturi.jpg" alt="Dr Kasturi Kurhade" />
-                <h3>Dr Kasturi Kurhade</h3>
-                <p style="color:#3da3ff">IVF Specialist & Gynaecologist</p>
-                <p>📍 Ahilyanagar, Maharashtra</p>
-                <button onclick="openModal('kasturi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-kasturi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('kasturi')">&times;</span>
-                    <img src="Kasturi.jpg" alt="Dr Kasturi Kurhade" />
-                    <h2>Dr Kasturi Kurhade</h2>
-                    <p style="color:#3da3ff">OBGYN, IVF Specialist</p>
-                    <p>📍 Ahilyanagar, Maharashtra</p>
-                    <p>📞 9284881404</p>
-                    <h4>Qualification</h4>
-                    <p>MBBS, MD, Fellowship in Reproductive Medicine, MRCOG 1</p>
-                    <h4>Parents</h4>
-                    <p>Gabrulalji & Anita Devatwal</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 85 - Raj Kamal Prajapati -->
-            <div class="card" data-name="rajkamal">
-                <img src="Raj.jpg" alt="Raj Kamal Prajapati" />
-                <h3>Raj Kamal Prajapati</h3>
-                <p style="color:#3da3ff">CA Finalist</p>
-                <p>📍 Andheri East, Mumbai</p>
-                <button onclick="openModal('rajkamal')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-rajkamal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('rajkamal')">&times;</span>
-                    <img src="Raj.jpg" alt="Raj Kamal Prajapati" />
-                    <h2>Raj Kamal Prajapati</h2>
-                    <p style="color:#3da3ff">CA Finalist</p>
-                    <p>📍 Andheri East, Mumbai</p>
-                    <p>📞 7977220697</p>
-                    <h4>Qualification</h4>
-                    <p>B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Shravan Lal Kumahar</p>
-                    <h4>Hometown</h4>
-                    <p>Saiwad, Shahpur, Rajasthan</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-            <!-- Member 86 - Devendra Kumawat -->
-            <div class="card" data-name="devendra">
-                <img src="Devendra.jpg" alt="Devendra Kumawat" />
-                <h3>Devendra Kumawat</h3>
-                <p style="color:#3da3ff">Manager – Accounts & Finance</p>
-                <p>📍 Dahisar East, Mumbai</p>
-                <button onclick="openModal('devendra')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-devendra">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('devendra')">&times;</span>
-                    <img src="Devendra.jpg" alt="Devendra Kumawat" />
-                    <h2>Devendra Kumawat</h2>
-                    <p style="color:#3da3ff">Manager – Accounts & Finance at Team HR</p>
-                    <p>📍 Dahisar East, Mumbai</p>
-                    <p>📞 8779970401</p>
-                    <p>📧 kumawatdev92@gmail.com</p>
-                    <h4>Qualification</h4>
-                    <p>CA Inter, M.Com</p>
-                    <h4>Parents</h4>
-                    <p>Chhaju Ram Kumawat & Vimla Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Jeelo, Neem Ka Thana, Sikar (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 87 - Rakesh Kumawat -->
-            <div class="card" data-name="rakesh">
-                <img src="Rakesh.jpg" alt="Rakesh Kumawat" />
-                <h3>Rakesh Kumawat</h3>
-                <p style="color:#3da3ff">Branch Sales Manager (Mortgage)</p>
-                <p>📍 Mira Road East, Mumbai</p>
-                <button onclick="openModal('rakesh')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-rakesh">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('rakesh')">&times;</span>
-                    <img src="Rakesh.jpg" alt="Rakesh Kumawat" />
-                    <h2>Rakesh Kumawat</h2>
-                    <p style="color:#3da3ff">Branch Sales Manager (Mortgage Sales)</p>
-                    <p>📍 Mira Road East, Mumbai</p>
-                    <p>📞 9930310583</p>
-                    <p>📧 rakeshkumawat1989@gmail.com</p>
-                    <h4>Qualification</h4>
-                    <p>MBA</p>
-                    <h4>Parents</h4>
-                    <p>Late Hari Narayan Kumawat & Tija Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Divrala, Sikar (Rajasthan)</p>
-                </div>
-            </div>
-
-            <!-- Member 88 - Nisha Raju Kumhar -->
-            <div class="card" data-name="nisha">
-                <img src="Nisha.jpg" alt="Nisha Raju Kumhar" />
-                <h3>Nisha Raju Kumhar</h3>
-                <p style="color:#3da3ff">BFSI – HDFC Life</p>
-                <p>📍 Bhayander</p>
-                <button onclick="openModal('nisha')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-nisha">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('nisha')">&times;</span>
-                    <img src="Nisha.jpg" alt="Nisha Raju Kumhar" />
-                    <h2>Nisha Raju Kumhar</h2>
-                    <p style="color:#3da3ff">BFSI – HDFC Life</p>
-                    <p>📍 Bhayander</p>
-                    <p>📞 8652110373</p>
-                    <h4>Qualification</h4>
-                    <p>MBA</p>
-                    <h4>Parents</h4>
-                    <p>Raju Kumhar & Asha Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Virat Nagar, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 89 - Peeyusha Gaurishankar Varma -->
-            <div class="card" data-name="peeyusha">
-                <img src="Peeyusha.jpg" alt="Peeyusha Varma" />
-                <h3>Peeyusha Varma</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('peeyusha')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-peeyusha">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('peeyusha')">&times;</span>
-                    <img src="Peeyusha.jpg" alt="Peeyusha Varma" />
-                    <h2>Peeyusha Gaurishankar Varma</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9867513940</p>
-                    <h4>Qualification</h4>
-                    <p>CA</p>
-                    <h4>Parents</h4>
-                    <p>Gaurishankar Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 90 - Priyanka Kumawat -->
-            <div class="card" data-name="priyanka2">
-                <img src="Priyanka2.jpg" alt="Priyanka Kumawat" />
-                <h3>Priyanka Kumawat</h3>
-                <p style="color:#3da3ff">CA Finalist</p>
-                <p>📍 Bhayander East</p>
-                <button onclick="openModal('priyanka2')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-priyanka2">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('priyanka2')">&times;</span>
-                    <img src="Priyanka2.jpg" alt="Priyanka Kumawat" />
-                    <h2>Priyanka Kumawat</h2>
-                    <p style="color:#3da3ff">CA Finalist</p>
-                    <p>📍 Bhayander East</p>
-                    <p>📞 8422979467</p>
-                    <h4>Qualification</h4>
-                    <p>CA Finalist</p>
-                    <h4>Parents</h4>
-                    <p>Rajendra Kumawat & Anita Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Neem Ka Thana, Rajasthan</p>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/priyanka-kumawat-8122252a5" target="_blank">LinkedIn
-                            Profile</a>
-                    </p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <!-- Member 91 - Bhawar Kumawat -->
-            <div class="card" data-name="bhawar">
-                <img src="Bhawar.jpg" alt="Bhawar Kumawat" />
-                <h3>Bhawar Kumawat</h3>
-                <p style="color:#3da3ff">Redevelopment, Hotel, Structural Audit</p>
-                <p>📍 Goregaon, Mumbai</p>
-                <button onclick="openModal('bhawar')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-bhawar">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('bhawar')">&times;</span>
-                    <img src="Bhawar.jpg" alt="Bhawar Kumawat" />
-                    <h2>Bhawar Kumawat</h2>
-                    <p style="color:#3da3ff">Redevelopment, Social Work, Hotel, Audit</p>
-                    <p>📍 Goregaon, Mumbai</p>
-                    <p>📞 9820146491</p>
-                    <h4>Qualification</h4>
-                    <p>Civil Engineer</p>
-                    <h4>Parents</h4>
-                    <p>Jagmohan Kumawat & Suman Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Ringus, Sikar, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 92 - Pinkee Varma -->
-            <div class="card" data-name="pinkee">
-                <img src="Pinkee.jpg" alt="Pinkee Varma" />
-                <h3>Pinkee Bajarang Varma</h3>
-                <p style="color:#3da3ff">Finance RM</p>
-                <p>📍 Pune</p>
-                <button onclick="openModal('pinkee')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-pinkee">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('pinkee')">&times;</span>
-                    <img src="Pinkee.jpg" alt="Pinkee Varma" />
-                    <h2>Pinkee Bajarang Varma</h2>
-                    <p style="color:#3da3ff">Finance RM</p>
-                    <p>📍 Pune</p>
-                    <p>📞 9511260106</p>
-                    <h4>Qualification</h4>
-                    <p>MBA in Finance</p>
-                    <h4>Parents</h4>
-                    <p>Bajarang & Shanti Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Purohit ka Bas, Piprali, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 93 - Sheetal Varma -->
-            <div class="card" data-name="sheetal">
-                <img src="Sheetal.jpg" alt="Sheetal Varma" />
-                <h3>Sheetal Varma</h3>
-                <p style="color:#3da3ff">Banker</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('sheetal')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sheetal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sheetal')">&times;</span>
-                    <img src="Sheetal.jpg" alt="Sheetal Varma" />
-                    <h2>Sheetal Varma</h2>
-                    <p style="color:#3da3ff">Banker</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9588655706</p>
-                    <h4>Qualification</h4>
-                    <p>Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Prakash Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Mandrela, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 94 - Priyanshu Varma -->
-            <div class="card" data-name="priyanshu">
-                <img src="Priyanshu.jpg" alt="Priyanshu Varma" />
-                <h3>Priyanshu Varma</h3>
-                <p style="color:#3da3ff">Software Quality Engineer</p>
-                <p>📍 Virar, Mumbai</p>
-                <button onclick="openModal('priyanshu')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-priyanshu">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('priyanshu')">&times;</span>
-                    <img src="Priyanshu.jpg" alt="Priyanshu Varma" />
-                    <h2>Priyanshu Prakash Varma</h2>
-                    <p style="color:#3da3ff">Software Quality Engineer</p>
-                    <p>📍 Virar, Mumbai</p>
-                    <p>📞 9096001352</p>
-                    <h4>Qualification</h4>
-                    <p>MSc. IT</p>
-                    <h4>Parents</h4>
-                    <p>Prakash Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Mandrella, Jhunjhunu, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 95 - Himanshu Kundalwal -->
-            <div class="card" data-name="himanshu">
-                <img src="Himanshu.jpg" alt="Himanshu Kundalwal" />
-                <h3>Himanshu Kundalwal</h3>
-                <p style="color:#3da3ff">Corporate Finance - CA</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('himanshu')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-himanshu">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('himanshu')">&times;</span>
-                    <img src="Himanshu.jpg" alt="Himanshu Kundalwal" />
-                    <h2>Himanshu Kundalwal</h2>
-                    <p style="color:#3da3ff">Corporate Finance - Fashion Retail</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9024262838</p>
-                    <h4>Qualification</h4>
-                    <p>B.Com & Chartered Accountant</p>
-                    <h4>Parents</h4>
-                    <p>Meghraj Kundalwal</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 96 - Pratiksha Balodiya -->
-            <div class="card" data-name="pratiksha">
-                <img src="Pratiksha.jpg" alt="Pratiksha Balodiya" />
-                <h3>Pratiksha Balodiya</h3>
-                <p style="color:#3da3ff">Credit Manager – IndusInd Bank</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('pratiksha')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-pratiksha">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('pratiksha')">&times;</span>
-                    <img src="Pratiksha.jpg" alt="Pratiksha Balodiya" />
-                    <h2>Pratiksha Balodiya</h2>
-                    <p style="color:#3da3ff">Credit Manager – IndusInd Bank</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9680275622</p>
-                    <h4>Qualification</h4>
-                    <p>MBA Finance</p>
-                    <h4>Parents</h4>
-                    <p>Parasram & Prem Balodiya</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 97 - Radheshyam Kumawat -->
-            <div class="card" data-name="radheshyam">
-                <img src="Radheshyam.jpg" alt="Radheshyam Kumawat" />
-                <h3>Radheshyam Kumawat</h3>
-                <p style="color:#3da3ff">Tax & Financial Advisor</p>
-                <p>📍 Mulund, Mumbai</p>
-                <button onclick="openModal('radheshyam')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-radheshyam">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('radheshyam')">&times;</span>
-                    <img src="Radheshyam.jpg" alt="Radheshyam Kumawat" />
-                    <h2>Radheshyam Kumawat</h2>
-                    <p style="color:#3da3ff">Tax & Financial Advisor</p>
-                    <p>📍 Mulund, Mumbai</p>
-                    <p>📞 9768733512</p>
-                    <h4>Qualification</h4>
-                    <p>LLB Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Kamal Prasad Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Jobner, Jaipur, Rajasthan</p>
-                </div>
-            </div>
-
-
-
+            <div class="project-card">
 
 
 
 
 
+        
 
+                <img src="PRJCT2.png" />
 
-
-
-
-
-            <!-- Member 98 - Parvind Kumavat -->
-            <div class="card" data-name="parvind">
-                <img src="Parvind.jpg" alt="Parvind Kumavat" />
-                <h3>Parvind Sitaram Kumavat</h3>
-                <p style="color:#3da3ff">Banking</p>
-                <p>📍 Surat</p>
-                <button onclick="openModal('parvind')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-parvind">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('parvind')">&times;</span>
-                    <img src="Parvind.jpg" alt="Parvind Kumavat" />
-                    <h2>Parvind Sitaram Kumavat</h2>
-                    <p style="color:#3da3ff">Banking</p>
-                    <p>📍 Surat</p>
-                    <p>📞 9712971937</p>
-                    <h4>Qualification</h4>
-                    <p>BCOM</p>
-                    <h4>Parents</h4>
-                    <p>Sitaram Fulchand Mistry</p>
-                    <h4>Hometown</h4>
-                    <p>Mandawa, Rajasthan</p>
-                </div>
-            </div>
-
-            <!-- Member 99 - Nikita Kumawat -->
-            <div class="card" data-name="nikita">
-                <img src="Nikita.jpg" alt="Nikita Kumawat" />
-                <h3>Nikita Sitaram Kumawat</h3>
-                <p style="color:#3da3ff">Manager, Kotak Bank</p>
-                <p>📍 Surat</p>
-                <button onclick="openModal('nikita')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-nikita">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('nikita')">&times;</span>
-                    <img src="Nikita.jpg" alt="Nikita Kumawat" />
-                    <h2>Nikita Sitaram Kumawat</h2>
-                    <p style="color:#3da3ff">Manager – Working Capital, Kotak</p>
-                    <p>📍 Surat</p>
-                    <p>📞 9687110666</p>
-                    <h4>Qualification</h4>
-                    <p>MBA (Marketing)</p>
-                    <h4>Parents</h4>
-                    <p>Sitaram & Munnidevi Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Mandawa, Rajasthan</p>
-                </div>
-            </div>
 
-            <!-- Member 100 - Pramod Kumawat -->
-            <div class="card" data-name="pramod">
-                <img src="Pramod.jpg" alt="Pramod Kumawat" />
-                <h3>Pramod Shishpal Kumawat</h3>
-                <p style="color:#3da3ff">Relationship Manager, HDFC</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('pramod')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-pramod">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('pramod')">&times;</span>
-                    <img src="Pramod.jpg" alt="Pramod Kumawat" />
-                    <h2>Pramod Shishpal Kumawat</h2>
-                    <p style="color:#3da3ff">Banking Finance – HDFC</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 8080643339</p>
-                    <h4>Qualification</h4>
-                    <p>BSc CS</p>
-                    <h4>Parents</h4>
-                    <p>Shishpal Kumawat & Santoshi Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Kanwat, Sikar, Rajasthan</p>
-                </div>
-            </div>
+                <h3>Project 2</h3>
+                <p>Crazy Scroll Animation Using CSS Only.</p>
+                <p>(This site is only responsive for PC)</p>
+                <a href="https://navneetvermaaa.github.io/project2/" class="project-btn" target="_blank">View
+                    Project</a>
 
-            <!-- Member 101 - Vaidehi Maru -->
-            <div class="card" data-name="vaidehi">
-                <img src="Vaidehi.jpg" alt="Vaidehi Maru" />
-                <h3>Vaidehi Maru</h3>
-                <p style="color:#3da3ff">Team Leader – BPO</p>
-                <p>📍 Ghatkopar, Mumbai</p>
-                <button onclick="openModal('vaidehi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-vaidehi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('vaidehi')">&times;</span>
-                    <img src="Vaidehi.jpg" alt="Vaidehi Maru" />
-                    <h2>Vaidehi Maru</h2>
-                    <p style="color:#3da3ff">Team Leader – BPO</p>
-                    <p>📍 Andheri East / Ghatkopar</p>
-                    <p>📞 9111009951 / 9713661052</p>
-                    <h4>Qualification</h4>
-                    <p>B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Laxminarayan Maru</p>
-                    <h4>Hometown</h4>
-                    <p>Dewas, Madhya Pradesh</p>
-                </div>
-            </div>
 
-            <!-- Member 103 - Girish Verma -->
-            <div class="card" data-name="girish">
-                <img src="Girish.jpg" alt="Girish Verma" />
-                <h3>Girish Pawan Verma</h3>
-                <p style="color:#3da3ff">Student – CA Foundation</p>
-                <p>📍 Bhiwandi, Thane</p>
-                <button onclick="openModal('girish')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-girish">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('girish')">&times;</span>
-                    <img src="Girish.jpg" alt="Girish Verma" />
-                    <h2>Girish Pawan Verma</h2>
-                    <p style="color:#3da3ff">Student – CA Foundation</p>
-                    <p>📍 Bhiwandi</p>
-                    <p>📞 7972273404</p>
-                    <h4>Qualification</h4>
-                    <p>12th Commerce</p>
-                    <h4>Parents</h4>
-                    <p>Pawan Verma & Urmila Verma</p>
-                    <h4>Hometown</h4>
-                    <p>Gudha Gorji, Jhunjhunu</p>
-                </div>
-            </div>
 
-            <!-- Member 104 - Navneet Verma -->
-            <!-- <div class="card" data-name="navneet">
-    <img src="Navneet.jpg" alt="Navneet Verma" />
-    <h3>Navneet Pawan Verma</h3>
-    <p style="color:#3da3ff">Student – B.Tech AIML</p>
-    <p>📍 Bhiwandi, Thane</p>
-    <button onclick="openModal('navneet')">Click to view details</button>
-</div>
-<div class="modal" id="profileModal-navneet">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('navneet')">&times;</span>
-        <img src="Navneet.jpg" alt="Navneet Verma" />
-        <h2>Navneet Pawan Verma</h2>
-        <p style="color:#3da3ff">Student – B.Tech in AI & ML</p>
-        <p>📍 Bhiwandi, Thane</p>
-        <p>📞 9322962133</p>
-        <h4>Qualification</h4>
-        <p>1st Year B.Tech (AI & ML)</p>
-        <h4>Parents</h4>
-        <p>Pawan Verma & Urmila Verma</p>
-        <h4>Hometown</h4>
-        <p>Gudha Gorji, Jhunjhunu</p>
-    </div>
-</div> -->
 
 
 
-            <!-- Member 105 - Sanjay Duhariya -->
-            <div class="card" data-name="sanjay">
-                <img src="Sanjay.png" alt="Sanjay Duhariya" />
-                <h3>Sanjay Begraj Duhariya</h3>
-                <p style="color:#3da3ff">Strategic Account Manager – Amazon</p>
-                <p>📍 Mira Road</p>
-                <button onclick="openModal('sanjay')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sanjay">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sanjay')">&times;</span>
-                    <img src="Sanjay.png" alt="Sanjay Duhariya" />
-                    <h2>Sanjay Begraj Duhariya</h2>
-                    <p style="color:#3da3ff">Strategic Account Manager – Amazon</p>
-                    <p>📍 Mira Road</p>
-                    <p>📞 8655558698</p>
-                    <h4>Qualification</h4>
-                    <p>MBA (Marketing)</p>
-                    <h4>Parents</h4>
-                    <p>Begraj & Manisha Duhariya</p>
-                    <h4>Hometown</h4>
-                    <p>Mandholi, Rajasthan</p>
-                </div>
             </div>
 
-            <!-- Member 106 - Rinku Varma -->
-            <div class="card" data-name="rinku">
-                <img src="Rinku.png" alt="Rinku Varma" />
-                <h3>Rinku Sunil Varma</h3>
-                <p style="color:#3da3ff">Semi-Qualified CA</p>
-                <p>📍 Goregaon & Andheri</p>
-                <button onclick="openModal('rinku')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-rinku">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('rinku')">&times;</span>
-                    <img src="Rinku.png" alt="Rinku Varma" />
-                    <h2>Rinku Sunil Varma</h2>
-                    <p style="color:#3da3ff">Semi-Qualified CA</p>
-                    <p>📍 Goregaon & Andheri, Mumbai</p>
-                    <p>📞 8097284703</p>
-                    <h4>Qualification</h4>
-                    <p>Inter CA, BAF Graduate</p>
-                    <h4>Parents</h4>
-                    <p>Sunil Shyamlal Varma</p>
-                    <h4>Hometown</h4>
-                    <p>Mandawa, Jhunjhunu, Rajasthan</p>
-                </div>
-            </div>
+            <div class="project-card">
 
-            <!-- Member 107 - Sonal Prajapati -->
-            <div class="card" data-name="sonal2">
-                <img src="Sonal.png" alt="Sonal Prajapati" />
-                <h3>Sonal Prajapati</h3>
-                <p style="color:#3da3ff">Manager – PSU Bank</p>
-                <p>📍 Ahmedabad</p>
-                <button onclick="openModal('sonal2')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-sonal2">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('sonal2')">&times;</span>
-                    <img src="Sonal.png" alt="Sonal Prajapati" />
-                    <h2>Sonal Prajapati</h2>
-                    <p style="color:#3da3ff">Manager – PSU Bank</p>
-                    <p>📍 Ahmedabad</p>
-                    <p>📞 9427023546</p>
-                    <h4>Qualification</h4>
-                    <p>BE in Electronics & Communication</p>
-                    <h4>Parents</h4>
-                    <p>Maliram & Bhagavati Prajapati</p>
-                    <h4>Hometown</h4>
-                    <p>Bilanderpura, Shahpura, Jaipur, Rajasthan</p>
-                </div>
-            </div>
 
 
+     
 
-            <!-- Member 109 - Kashish Sunil Verma -->
-            <div class="card" data-name="kashish">
-                <img src="Kashish.jpg" alt="Kashish Sunil Verma" />
-                <h3>Kashish Sunil Verma</h3>
-                <p style="color:#3da3ff">Student</p>
-                <p>📍 Mira-Bhayandar (E)</p>
-                <button onclick="openModal('kashish')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-kashish">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('kashish')">&times;</span>
-                    <img src="Kashish.jpg" alt="Kashish Sunil Verma" />
-                    <h2>Kashish Sunil Verma</h2>
-                    <p style="color:#3da3ff">Student</p>
-                    <p>📍 Mira-Bhayandar (E)</p>
-                    <p>📞 8104796674</p>
-                    <p>📧 kashish311201@gmail.com</p>
-                    <h4>Qualification</h4>
-                    <p>Pursuing MBA (HR)</p>
-                    <h4>Parents</h4>
-                    <p>Sunil Prakash Verma & Anjali Sunil Verma</p>
-                    <h4>Hometown</h4>
-                    <p>Kishangarh, Rajasthan</p>
-                </div>
-            </div>
+                <img src="PRJCT3.png" />
 
+                <h3>Project 3</h3>
+                <p>Stunning HTML & CSS Card Animation.</p>
+                <p>(This site is only responsive for PC)</p>
+                <a href="https://navneetvermaaa.github.io/project3/" class="project-btn" target="_blank">View
+                    Project</a>
 
-            <!-- Member 110 - Ashi Raj Kumawat -->
-            <div class="card" data-name="ashi">
-                <img src="Ashi.jpg" alt="Ashi Raj Kumawat" />
-                <h3>Ashi Raj Kumawat</h3>
-                <p style="color:#3da3ff">Auditor, PwC (Ex-KPMG)</p>
-                <p>📍 Jaipur, Rajasthan</p>
-                <button onclick="openModal('ashi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-ashi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('ashi')">&times;</span>
-                    <img src="Ashi.jpg" alt="Ashi Raj Kumawat" />
-                    <h2>Ashi Raj Kumawat</h2>
-                    <p style="color:#3da3ff">Auditor at PwC (Ex-KPMG)</p>
-                    <p>📍 Jaipur, Rajasthan</p>
-                    <p>📞 +91 7615830546</p>
-                    <h4>Qualification</h4>
-                    <p>Chartered Accountant (CA), B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Mr. Sanjay Kumawat & Mrs. Shweta Kumawat</p>
-                    <h4>LinkedIn</h4>
-                    <p>
-                        <a href="https://www.linkedin.com/in/ca-ashi-raj-kumawat-668690148?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                            target="_blank">
-                            LinkedIn Profile
-                        </a>
-                    </p>
-                </div>
-            </div>
 
 
 
-            <!-- Member    -     -->
-            <!-- <div class="card" data-name="ashi">
-                <img src="" alt="" />
-                <h3></h3>
-                <p style="color:#3da3ff"></p>
-                <p></p>
-                <button onclick="openModal('ashi')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-ashi">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('')">&times;</span>
-                    <img src="" alt="" />
-                    <h2>t</h2>
-                    <p style="color:#3da3ff"></p>
-                    <p></p>
-                    <p>📞 </p>
-                    <h4></h4>
-                    <p></p>
-                    <h4>Parents</h4>
-                    <p></p>
-                    <h4>LinkedIn</h4>
-                    <p>
-                        <a href=""
-                            target="_blank">
-                            LinkedIn Profile
-                        </a>
-                    </p>
-                </div>
             </div> -->
 
 
 
 
 
-            <div class="card" data-name="nehadhan">
-                <img src="Nehadhan.png" alt="Neha Dhanraj Kumawat" />
-                <h3>Neha Dhanraj Kumawat</h3>
-                <p style="color:#3da3ff">Senior Coordinator</p>
-                <p>📍 Jaipur, Rajasthan</p>
-                <button onclick="openModal('nehadhan')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-nehadhan">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('nehadhan')">&times;</span>
-                    <img src="Nehadhan.png" alt="Neha Dhanraj Kumawat" />
-                    <h2>Neha Dhanraj Kumawat</h2>
-                    <p style="color:#3da3ff">Senior Coordinator</p>
-                    <p>📍 Jaipur, Rajasthan</p>
-                    <p>📞 9571635334</p>
-                    <h4>Qualification</h4>
-                    <p>M.A B.Ed (English Literature)</p>
-                    <h4>Parents</h4>
-                    <p>Dhanraj Kumawat (Father), Ashima Kumawat (Mother)</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur</p>
-                    <h4>Instagram</h4>
-                    <a href="https://www.instagram.com/p/C1clJMhpkh/?igsh=MTJ6anFrZmhzb2dtOA==" target="_blank">View
-                        Profile</a>
-                </div>
-            </div>
+
+
+            <div class="project-card">
 
 
 
-            <!-- ✅ Member 110 – Winay Kumawat -->
-            <div class="card" data-name="winay">
-                <img src="Winay.png" alt="Winay Kumawat" />
-                <h3>Winay Kumawat</h3>
-                <p style="color:#3da3ff">Model Trainer, Event Planner, Director</p>
-                <p>📍 Jaipur, Rajasthan</p>
-                <button onclick="openModal('winay')">Click to view details</button>
+                <img src="PRJCT7.png" />
+
+                <h3>Project 1</h3>
+                <p>QUORA | SMART HOME <br><br>-made with Framer.</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://heavenly-lottery-071251.framer.app/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
             </div>
-            <div class="modal" id="profileModal-winay">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('winay')">&times;</span>
-                    <img src="Winay.png" alt="Winay Kumawat" />
-                    <h2>Winay Kumawat</h2>
-                    <p style="color:#3da3ff">Model Trainer, Wedding & Events Planner, Director – Wonder Kids Model of
-                        India</p>
-                    <p>📍 Jaipur, Rajasthan</p>
-                    <p>📞 9351220224</p>
-                    <h4>Parents</h4>
-                    <p>Geeta Kumawat & Amar Kumawat</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur</p>
-                    <h4>Instagram</h4>
-                    <a href="https://www.instagram.com/winay_kumawat?igsh=Zmg0cG9md3RqYzR3" target="_blank">View
-                        Profile</a>
-                    <h4>YouTube</h4>
-                    <a href="https://www.youtube.com/@NachleDanceAcademy" target="_blank">Nachle Dance Academy</a>
-                </div>
+
+
+            <div class="project-card">
+
+
+
+
+                <img src="PRJCT4.png" />
+
+                <h3>Project 2</h3>
+                <p>Burger King Landing Page.</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://navneetvermaaa.github.io/project4/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
             </div>
 
 
 
+            <div class="project-card">
 
-            <!-- ✅ Member 111 – Rajkumar Prajapat -->
-            <div class="card" data-name="rajkumar">
-                <img src="Rajkumar.png" alt="Rajkumar Prajapat" />
-                <h3>Rajkumar Prajapat</h3>
-                <p style="color:#3da3ff">Property & Matrimonial Services</p>
-                <p>📍 Jaipur, Rajasthan</p>
-                <button onclick="openModal('rajkumar')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-rajkumar">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('rajkumar')">&times;</span>
-                    <img src="Rajkumar.png" alt="Rajkumar Prajapat" />
-                    <h2>Rajkumar Prajapat</h2>
-                    <p style="color:#3da3ff">Property & Matrimonial Services</p>
-                    <p>📍 Jaipur, Rajasthan</p>
-                    <p>📞 7792043747</p>
-                    <h4>Qualification</h4>
-                    <p>MA</p>
-                    <h4>Parents</h4>
-                    <p>Jagdish Narayan ji & Kamla Prajapat</p>
-                    <h4>Hometown</h4>
-                    <p>Jaipur</p>
-                </div>
+
+
+                <img src="PRJCT5.png" />
+
+                <h3>Project 3</h3>
+                <p>Boostify | Digital Marketing Solution. <br> <br> LANDING PAGE</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://navneetvermaaa.github.io/project5/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
             </div>
 
 
 
-            <!-- ✅ Member 112 – CA Mukesh Prajapat -->
-            <div class="card" data-name="Mukeshprajapat">
-                <img src="Mukeshprajapat.png" alt="CA Mukesh Prajapat" />
-                <h3>CA Mukesh Prajapat</h3>
-                <p style="color:#3da3ff">Chartered Accountant</p>
-                <p>📍 Mumbai</p>
-                <button onclick="openModal('Mukeshprajapat')">Click to view details</button>
-            </div>
-            <div class="modal" id="profileModal-Mukeshprajapat">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('Mukeshprajapat')">&times;</span>
-                    <img src="Mukeshprajapat.png" alt="CA Mukesh Prajapat" />
-                    <h2>CA Mukesh Prajapat</h2>
-                    <p style="color:#3da3ff">Chartered Accountant</p>
-                    <p>📍 Mumbai</p>
-                    <p>📞 9602207811</p>
-                    <h4>Qualification</h4>
-                    <p>CA, B.Com</p>
-                    <h4>Parents</h4>
-                    <p>Lt. Mulchand Prajapat & Vimla Devi</p>
-                    <h4>Hometown</h4>
-                    <p>Fatehpur Shekhawati, Sikar</p>
-                </div>
+
+
+            <div class="project-card">
+
+
+
+
+
+                <img src="PRJCT6.png" />
+
+                <h3>Project 4</h3>
+                <p>D'Crepes Cafe.</p>
+                <p>(Responsive for all Devices)</p>
+                <a href="https://navneetvermaaa.github.io/project6/" class="project-btn" target="_blank">View
+                    Project</a>
+
+
+
+
             </div>
 
 
@@ -3349,35 +355,177 @@
 
 
 
-
-
-    </section>
-
-
-
-
-
-
-    <!-- Developer Promotion Section -->
-
-
-
-    <section class="promotion">
-        <h2>Built With Passion By Navneet 💻</h2>
-        <p>If you want a clean and professional website like this for your business, event, or community...</p>
-        <a href="mailto:navneet.v0000001@gmail.com" class="cta-button">Let’s Collaborate →</a>
-
-        <br> <br>
-        <div class="social-links">
-            <a href="https://navneetvermaaa.github.io/Portfolio/" target="_blank">Portfolio</a>
-            
-            <!-- | -->
-
-
-            <!-- <a href="https://www.instagram.com/ohh.navneet" target="_blank">Instagram</a> -->
         </div>
 
     </section>
+
+
+
+
+
+
+
+
+    <!-- SKILLS SECTION  -->
+
+    <section class="skills " id="skill" data-aos="fade-up">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+
+
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+
+
+            <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="tailwind.png" alt="">
+                <p>Tailwind CSS</p>
+            </div>
+
+
+            <!-- <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div> -->
+
+
+            <!-- <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+            </div> -->
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- PRICING SECTION  -->
+
+    <section class="pricing" id="pricing" data-aos="fade-up">
+        <h2 class="section-title">Pricing Plans</h2>
+
+        <div class="pricing-container">
+
+
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p class="price">₹999</p>
+                <ul>
+                    <li>1 Static Page</li>
+                    <li>Responsive Design</li>
+                    <li>Delivery: 2 days</li>
+                </ul>
+            </div>
+
+
+
+            <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <p class="price">₹3999</p>
+                <ul>
+                    <li>Multi-Page Website</li>
+                    <li>Animations + Mobile Optimized</li>
+                    <li>Delivery: 3–5 days</li>
+                </ul>
+            </div>
+
+
+            <div class="pricing-card">
+                <h3>Advanced Plan</h3>
+                <p class="price">₹5999+</p>
+                <ul>
+                    <li>Portfolio or Business Website</li>
+                    <li>Custom Design + JavaScript Features</li>
+                    <li>Delivery: 5–7 days</li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+        <p class="pricing-note">
+
+            <strong>
+                Note:
+            </strong>
+            I'm currently focused on
+            <span class="highlight">building trust</span>
+
+            and strong
+            client relationships.
+            I'm happy to work at a
+
+            <span class="highlight-free">
+                very minimal cost
+
+            </span> <span style="font-style: italic;">(or even <strong>free</strong> in some cases)</span> to prove my
+            skills and
+            deliver value.
+            <br><br>✨ Let's <span class="highlight">grow together</span>!
+        </p>
+
+
+    </section>
+
+
+
+    <!-- CONTACT SECTIONS -->
+
+    <section class="contact" id="contact" data-aos="fade-up">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="contact-text">Have a project in mind or just want to say hello? Fill out the form below!</p>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xblydgar" method="POST">
+
+            <input name="name" type="text" placeholder="Your Name" required>
+
+            <input name="e-mail" type="email" placeholder="Your Email" required>
+
+            <input name="Mobile no." type="tel" placeholder=" Your Mobile no." required>
+
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+            <input type="text" name="_gotcha" style="display:none"> <!-- spam protection -->
+
+            <button type="submit">Send Message</button>
+
+            <p id="formSuccess" style="display: none; color: #00ffee; margin-top: 1rem;"></p>
+        </form>
+
+    </section>
+
+
 
 
 
@@ -3387,12 +535,31 @@
 
     <!-- FOOTER  -->
 
+    <footer class="footer ">
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Professional Interactives. All rights reserved.</p>
-            <!-- <p><a href="mailto:navneet.v0000001@gmail.com">Email</a></p> -->
+        <p>&copy; 2025 Navneet. All rights reserved. </p>
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/navneet-verma-32b370312/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/NavneetVermaaa" target="_blank"><i class="fab fa-github"></i></a>
+
+            <a href="https://instagram.com/ohh.navneet" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <!-- <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a> -->
+
+            <!-- WhatsApp Contact Link -->
+            <a href="https://wa.me/919322962133?text=Hi%20Navneet!%20I'm%20interested%20in%20your%20web%20development%20services."
+                target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
         </div>
+
+
+
     </footer>
 
 
@@ -3407,7 +574,50 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
+
+    <!-- AOS JS (FOR SCROLL ANIMATION) -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+        // AOS.init({
+        //     duration: 1000, // animation duration in ms
+        //     once: true      // animation happens only once
+
+        // });
+
+
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out', // optional for smoothness
+        });
+
+    </script>
+
+
 </body>
 
 </html>
