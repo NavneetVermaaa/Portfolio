@@ -8,6 +8,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <!-- ICONS -->
 
@@ -48,6 +49,23 @@
 
 
 
+
+
+
+    <!-- FONT  -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/grafiels?styles=184303" rel="stylesheet">
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Serif+Display:ital@0;1&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+QLD+Hand&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=My+Soul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 
 
@@ -144,7 +162,10 @@
 
         <div class="hero-content">
 
-            <h1>Hello! I am <span>Navneet</span></h1>
+            <!-- <h1>Hello! I am <span> <i>Navneet</i></span></h1> -->
+
+            <h1 class="typing-text"> I AM <span id="typed-text"></span><span id="cursor">|</span></h1>
+
 
             <p>A passionate Frontend Developer crafting beautiful web experiences.</p>
 
@@ -181,10 +202,14 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="myimg2.jpg" alt="Navneet">
+                <img src="7.jpg" alt="Navneet">
             </div>
         </div>
     </section>
+
+
+
+
 
 
 
@@ -377,31 +402,54 @@
             <div class="skill-card">
                 <i class="fab fa-html5"></i>
                 <p>HTML5</p>
+                <div class="skill-bar">
+                    <div class="skill-progress html">
+                        <span class="percent">100%</span>
+                    </div>
+                </div>
             </div>
-
-
 
             <div class="skill-card">
                 <i class="fab fa-css3-alt"></i>
                 <p>CSS3</p>
+                <div class="skill-bar">
+                    <div class="skill-progress css"><span class="percent">95%</span></div>
+                </div>
             </div>
-
 
             <div class="skill-card">
                 <i class="fab fa-js"></i>
                 <p>JavaScript</p>
+                <div class="skill-bar">
+                    <div class="skill-progress js"><span class="percent">70%</span></div>
+                </div>
             </div>
 
 
+            <div class="skill-card">
+
+                <img src="tailwind.png" alt="">
+
+                <p>Tailwind CSS</p>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress tailwind">
+                        <span class="percent">50%</span>
+                    </div>
+                </div>
+            </div>
             <div class="skill-card">
                 <i class="fab fa-bootstrap"></i>
                 <p>Bootstrap</p>
+                <div class="skill-bar">
+                    <div class="skill-progress bootstrap"><span class="percent">10%</span></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-                <img src="tailwind.png" alt="">
-                <p>Tailwind CSS</p>
-            </div>
+
+
+
 
 
             <!-- <div class="skill-card">
@@ -544,7 +592,7 @@
             <a href="https://www.linkedin.com/in/navneet-verma-32b370312/" target="_blank"><i
                     class="fab fa-linkedin"></i></a>
 
-<!--             <a href="https://github.com/NavneetVermaaa" target="_blank"><i class="fab fa-github"></i></a>  -->
+            <!-- <a href="https://github.com/NavneetVermaaa" target="_blank"><i class="fab fa-github"></i></a> -->
 
             <a href="https://instagram.com/ohh.navneet" target="_blank"><i class="fab fa-instagram"></i></a>
 
