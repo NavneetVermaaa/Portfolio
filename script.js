@@ -71,4 +71,42 @@ window.addEventListener("scroll", () => {
 
 
 
-  
+  //  HERO SECTION ANIMATION 
+document.addEventListener("DOMContentLoaded", function () {
+  const phrases = ["Navneet", "Web Developer", "UI Designer", "Freelancer"];
+  const typedText = document.getElementById("typed-text");
+  const cursor = document.getElementById("cursor");
+
+  let phraseIndex = 0;
+  let letterIndex = 0;
+  let currentPhrase = "";
+  let isDeleting = false;
+
+  function type() {
+    const fullPhrase = phrases[phraseIndex];
+
+    if (isDeleting) {
+      currentPhrase = fullPhrase.substring(0, letterIndex--);
+    } else {
+      currentPhrase = fullPhrase.substring(0, letterIndex++);
+    }
+
+    typedText.textContent = currentPhrase;
+
+    if (!isDeleting && letterIndex === fullPhrase.length + 1) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+      return;
+    }
+
+    if (isDeleting && letterIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+
+    const speed = isDeleting ? 50 : 100;
+    setTimeout(type, speed);
+  }
+
+  type();
+});
