@@ -1,35 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-    const successMsg = document.getElementById("formSuccess");
+  const form = document.getElementById("contactForm");
+  const successMsg = document.getElementById("formSuccess");
 
-    form.addEventListener("submit", async function (e) {
-        e.preventDefault(); // prevent default submit
-        const formData = new FormData(form);
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // prevent default submit
+    const formData = new FormData(form);
 
-        try {
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                successMsg.textContent = "Message sent successfully!";
-                successMsg.style.display = "block";
-                form.reset(); // clear form fields
-            } else {
-                successMsg.textContent = "Oops! Something went wrong.";
-                successMsg.style.color = "#ff5555";
-                successMsg.style.display = "block";
-            }
-        } catch (error) {
-            successMsg.textContent = "Error sending message.";
-            successMsg.style.color = "#ff5555";
-            successMsg.style.display = "block";
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
         }
-    });
+      });
+
+      if (response.ok) {
+        successMsg.textContent = "Message sent successfully!";
+        successMsg.style.display = "block";
+        form.reset(); // clear form fields
+      } else {
+        successMsg.textContent = "Oops! Something went wrong.";
+        successMsg.style.color = "#ff5555";
+        successMsg.style.display = "block";
+      }
+    } catch (error) {
+      successMsg.textContent = "Error sending message.";
+      successMsg.style.color = "#ff5555";
+      successMsg.style.display = "block";
+    }
+  });
 });
 
 
@@ -71,7 +71,7 @@ window.addEventListener("scroll", () => {
 
 
 
-  //  HERO SECTION ANIMATION 
+//  HERO SECTION ANIMATION 
 document.addEventListener("DOMContentLoaded", function () {
   const phrases = ["Navneet", "Web Developer", "UI Designer", "Freelancer"];
   const typedText = document.getElementById("typed-text");
