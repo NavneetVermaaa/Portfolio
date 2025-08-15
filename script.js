@@ -1,112 +1,131 @@
+
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out',
+});
+
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contactForm");
-  const successMsg = document.getElementById("formSuccess");
+    const form = document.getElementById("contactForm");
+    const successMsg = document.getElementById("formSuccess");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault(); // prevent default submit
-    const formData = new FormData(form);
+    // CONTACT FORM HANDLER
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
 
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                successMsg.textContent = "Message sent successfully!";
+                successMsg.style.display = "block";
+                successMsg.style.color = "#00ff00";
+                form.reset();
+                setTimeout(() => { successMsg.style.display = "none"; }, 5000);
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    successMsg.textContent = data.errors.map(error => error.message).join(", ");
+                } else {
+                    successMsg.textContent = "Oops! There was a problem submitting your form.";
+                }
+                successMsg.style.display = "block";
+                successMsg.style.color = "#ff4d4d";
+                setTimeout(() => { successMsg.style.display = "none"; }, 5000);
+            }
+        } catch (error) {
+            successMsg.textContent = "Network error. Please try again later.";
+            successMsg.style.display = "block";
+            successMsg.style.color = "#ff4d4d";
+            setTimeout(() => { successMsg.style.display = "none"; }, 5000);
         }
-      });
+    });
 
-      if (response.ok) {
-        successMsg.textContent = "Message sent successfully!";
-        successMsg.style.display = "block";
-        form.reset(); // clear form fields
-      } else {
-        successMsg.textContent = "Oops! Something went wrong.";
-        successMsg.style.color = "#ff5555";
-        successMsg.style.display = "block";
-      }
-    } catch (error) {
-      successMsg.textContent = "Error sending message.";
-      successMsg.style.color = "#ff5555";
-      successMsg.style.display = "block";
-    }
-  });
+    // NAVBAR ACTIVE LINK ON SCROLL
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
+            }
+        });
+    });
+
+    // SMOOTH SCROLLING
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 60,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // MOBILE MENU TOGGLE
+    const header = document.querySelector(".site-header");
+    const menuToggle = document.createElement("div");
+    menuToggle.classList.add("menu-toggle");
+    menuToggle.innerHTML = "&#9776;"; // Hamburger icon
+    header.appendChild(menuToggle);
+
+    const nav = document.querySelector(".navbar");
+
+    menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+
+    // Close menu when clicking a link (mobile)
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (nav.classList.contains("open")) {
+                nav.classList.remove("open");
+            }
+        });
+    });
 });
 
 
 
 
+// MOBILE MENU TOGGLE
+const menuToggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
 
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("open");
+});
 
-
-
-
-
-
-// highlights the active nav link       
-const sections = document.querySelectorAll("section");
+// Close menu when clicking a link
 const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const rect = section.getBoundingClientRect();
-    const topVisible = rect.top <= 150; // top enters the viewport
-    const bottomVisible = rect.bottom >= 150; // bottom hasn't gone past
-
-    if (topVisible && bottomVisible) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (navbar.classList.contains("open")) {
+            navbar.classList.remove("open");
+        }
+    });
 });
 
-
-
-
-
-//  HERO SECTION ANIMATION 
-document.addEventListener("DOMContentLoaded", function () {
-  const phrases = ["Navneet", "Web Developer", "UI Designer", "Freelancer"];
-  const typedText = document.getElementById("typed-text");
-  const cursor = document.getElementById("cursor");
-
-  let phraseIndex = 0;
-  let letterIndex = 0;
-  let currentPhrase = "";
-  let isDeleting = false;
-
-  function type() {
-    const fullPhrase = phrases[phraseIndex];
-
-    if (isDeleting) {
-      currentPhrase = fullPhrase.substring(0, letterIndex--);
-    } else {
-      currentPhrase = fullPhrase.substring(0, letterIndex++);
-    }
-
-    typedText.textContent = currentPhrase;
-
-    if (!isDeleting && letterIndex === fullPhrase.length + 1) {
-      isDeleting = true;
-      setTimeout(type, 1000);
-      return;
-    }
-
-    if (isDeleting && letterIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-    }
-
-    const speed = isDeleting ? 50 : 100;
-    setTimeout(type, speed);
-  }
-
-  type();
-});
