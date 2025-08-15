@@ -7,76 +7,21 @@
 
     <title>Navneet Verma - Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-
-
     <!-- ICONS -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 
     <!-- AOS JS (FOR SCROLL ANIMATION) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-
-
-    <!-- SOCIAL MEDIA LINK  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-
-
-    <!-- FEVICON (BROWSER ICON  )-->
-
-    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-
-    <!-- FAVICON (Browser Icon) -->
-    <!-- <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" /> -->
-
-
-
-
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="faviconn.png" sizes="32x32">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="faviconn.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="faviconn.png">
-    <link rel="apple-touch-icon" href="faviconn.png">
-
-
-
-
-
-
-
-    <!-- FONT  -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.cdnfonts.com/css/grafiels?styles=184303" rel="stylesheet">
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Serif+Display:ital@0;1&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+QLD+Hand&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=My+Soul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-
-
-
-
-
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- SEO TAGS -->
-
-    <!-- Primary Meta Tags -->
     <title>Navneet Verma | Frontend Developer</title>
     <meta name="title" content="Navneet Verma | Frontend Developer">
     <meta name="description"
@@ -98,85 +43,57 @@
 
 
 
-
-
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6Z8TFTZPS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-P6Z8TFTZPS');
-    </script>
-
-
-
+    <!-- LINKING CSS  -->
+    <link rel="stylesheet" href="STYLE.CSS">
 </head>
 
 <body>
 
 
-    <header class="site-header ">
 
 
-        <div class="container">
 
-            <h1 class="logo">Navneet</h1>
 
+
+
+
+
+
+
+    <header class="site-header">
+        <div class="header-content">
+            <a href="#home" class="logo">Navneet</a>
+
+            <!-- Hamburger button -->
+            <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
         </div>
-
-
-        <nav class="navbar ">
-
-            <ul class="nav-links">
-
-                <li><a href="#home" class="active">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#skill">Skill</a></li>
-
-                <li><a href="#pricing">Pricing</a></li>
-
-                <li><a href="#contact">Contact me</a></li>
-
-            </ul>
-        </nav>
-
-
     </header>
 
 
-    <!-- SECTION  -->
-
-    <section class="hero " id="home" data-aos="zoom-out-down">
-
-        <!-- <div class="img">
-            <img src="6.jpg" alt="">
-        </div> -->
-
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <!-- <img src="gptimg.png" alt="Hero Background"> -->
+        </div>
         <div class="hero-content">
-
-            <!-- <h1>Hello! I am <span> <i>Navneet</i></span></h1> -->
-
-            <h1 class="typing-text">
-                I AM <span id="typed-text"></span><span id="cursor">|</span>
-            </h1>
-
-
-
-            <p>A passionate Frontend Developer crafting beautiful web experiences.</p>
-
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Navneet</h1>
+            <p class="hero-title">A Frontend Developer</p>
+            <p class="hero-description">I craft elegant and user-friendly websites.</p>
             <div class="hero-buttons">
-
-                <a href="#projects" class="btn">View Projects</a>
-
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+                <a href="#contact" class="btn btn-secondary">GET IN TOUCH</a>
             </div>
         </div>
     </section>
@@ -184,228 +101,77 @@
 
 
 
-    <!-- ABOUT ME SECTION  -->
 
-    <section class="about " id="about" data-aos="fade-up">
 
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about" data-aos="fade-up">
         <div class="about-container">
-
+            <h2 class="section-title">About Me</h2>
             <div class="about-text">
-
-                <h2>About Me</h2>
-
                 <p>
                     I'm Navneet, a frontend web developer with a passion for creating beautiful and functional websites.
-                    <br> <br>
+                </p>
+                <p>
                     I specialize in turning ideas into interactive digital experiences using HTML, CSS, and JavaScript.
-                    <br> <br>
                 </p>
                 <p>
                     My goal is to deliver visually impressive and responsive designs that leave a lasting impression.
                 </p>
             </div>
-
-
-            <!-- <div class="about-image">
-                <img src="7.jpg" alt="Navneet">
-            </div> -->
-
-
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- PROJECTS SECTION  -->
-
-    <section class="projects " id="projects" data-aos="fade-up">
-
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects" data-aos="fade-up">
         <h2 class="section-title">Projects</h2>
-
         <div class="projects-container">
-
-            <!-- <div class="project-card">
-
-
-
-
-
-                <img src="PRJCT1.png" />
-
-                <h3>Project 1</h3>
-                <p>Crazy 3D Rotation Effect Using CSS Only.</p>
-                <p>(This site is only responsive for PC)</p>
-
-                <a href="https://navneetvermaaa.github.io/project1/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
+            <div class="project-card">
+                <img src="PRJCT7.png" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>QUORA | SMART HOME - made with Framer.<br>(Responsive for all Devices)</p>
+                    <a href="https://heavenly-lottery-071251.framer.app/" class="project-btn" target="_blank">View
+                        Project</a>
+                </div>
             </div>
 
             <div class="project-card">
-
-
-
-
-
-        
-
-                <img src="PRJCT2.png" />
-
-
-                <h3>Project 2</h3>
-                <p>Crazy Scroll Animation Using CSS Only.</p>
-                <p>(This site is only responsive for PC)</p>
-                <a href="https://navneetvermaaa.github.io/project2/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
-
-
-
+                <img src="PRJCT4.png" alt="Project 2" />
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Burger King Landing Page.<br>(Responsive for all Devices)</p>
+                    <a href="https://navneetvermaaa.github.io/project4/" class="project-btn" target="_blank">View
+                        Project</a>
+                </div>
             </div>
 
             <div class="project-card">
-
-
-
-     
-
-                <img src="PRJCT3.png" />
-
-                <h3>Project 3</h3>
-                <p>Stunning HTML & CSS Card Animation.</p>
-                <p>(This site is only responsive for PC)</p>
-                <a href="https://navneetvermaaa.github.io/project3/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
-
-            </div> -->
-
-
-
-
-
-
-
-            <div class="project-card">
-
-
-
-                <img src="PRJCT7.png" />
-
-                <h3>Project 1</h3>
-                <p>QUORA | SMART HOME <br><br>-made with Framer.</p>
-                <p>(Responsive for all Devices)</p>
-                <a href="https://heavenly-lottery-071251.framer.app/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
-
+                <img src="PRJCT5.png" alt="Project 3" />
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>Boostify | Digital Marketing Solution.<br>LANDING PAGE<br>(Responsive for all Devices)</p>
+                    <a href="https://navneetvermaaa.github.io/project5/" class="project-btn" target="_blank">View
+                        Project</a>
+                </div>
             </div>
 
-
             <div class="project-card">
-
-
-
-
-                <img src="PRJCT4.png" />
-
-                <h3>Project 2</h3>
-                <p>Burger King Landing Page.</p>
-                <p>(Responsive for all Devices)</p>
-                <a href="https://navneetvermaaa.github.io/project4/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
-
+                <img src="PRJCT6.png" alt="Project 4" />
+                <div class="project-info">
+                    <h3>Project 4</h3>
+                    <p>D'Crepes Cafe.<br>(Responsive for all Devices)</p>
+                    <a href="https://navneetvermaaa.github.io/project6/" class="project-btn" target="_blank">View
+                        Project</a>
+                </div>
             </div>
-
-
-
-            <div class="project-card">
-
-
-
-                <img src="PRJCT5.png" />
-
-                <h3>Project 3</h3>
-                <p>Boostify | Digital Marketing Solution. <br> <br> LANDING PAGE</p>
-                <p>(Responsive for all Devices)</p>
-                <a href="https://navneetvermaaa.github.io/project5/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
-
-            </div>
-
-
-
-
-
-            <div class="project-card">
-
-
-
-
-
-                <img src="PRJCT6.png" />
-
-                <h3>Project 4</h3>
-                <p>D'Crepes Cafe.</p>
-                <p>(Responsive for all Devices)</p>
-                <a href="https://navneetvermaaa.github.io/project6/" class="project-btn" target="_blank">View
-                    Project</a>
-
-
-
-
-            </div>
-
-
-
-
-
-
-
         </div>
-
     </section>
 
-
-
-
-
-
-
-
-    <!-- SKILLS SECTION  -->
-
-    <section class="skills " id="skill" data-aos="fade-up">
-
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skill" data-aos="fade-up">
         <h2 class="section-title">My Skills</h2>
-
         <div class="skills-container">
-
             <div class="skill-card">
                 <i class="fab fa-html5"></i>
                 <p>HTML5</p>
@@ -432,20 +198,16 @@
                 </div>
             </div>
 
-
             <div class="skill-card">
-
-                <img src="tailwind.png" alt="">
-
+                <img src="tailwind4.png" alt="Tailwind CSS">
                 <p>Tailwind CSS</p>
-
                 <div class="skill-bar">
-
                     <div class="skill-progress tailwind">
                         <span class="percent">50%</span>
                     </div>
                 </div>
             </div>
+
             <div class="skill-card">
                 <i class="fab fa-bootstrap"></i>
                 <p>Bootstrap</p>
@@ -453,41 +215,13 @@
                     <div class="skill-progress bootstrap"><span class="percent">10%</span></div>
                 </div>
             </div>
-
-
-
-
-
-
-            <!-- <div class="skill-card">
-                <i class="fab fa-git-alt"></i>
-                <p>Git</p>
-            </div> -->
-
-
-            <!-- <div class="skill-card">
-                <i class="fab fa-github"></i>
-                <p>GitHub</p>
-            </div> -->
-
-
         </div>
-
     </section>
 
-
-
-
-
-
-    <!-- PRICING SECTION  -->
-
+    <!-- PRICING SECTION -->
     <section class="pricing" id="pricing" data-aos="fade-up">
         <h2 class="section-title">Pricing Plans</h2>
-
         <div class="pricing-container">
-
-
             <div class="pricing-card">
                 <h3>Basic Plan</h3>
                 <p class="price">₹999</p>
@@ -497,8 +231,6 @@
                     <li>Delivery: 2 days</li>
                 </ul>
             </div>
-
-
 
             <div class="pricing-card">
                 <h3>Premium Plan</h3>
@@ -510,7 +242,6 @@
                 </ul>
             </div>
 
-
             <div class="pricing-card">
                 <h3>Advanced Plan</h3>
                 <p class="price">₹5999+</p>
@@ -520,159 +251,57 @@
                     <li>Delivery: 5–7 days</li>
                 </ul>
             </div>
-
-
-
-
         </div>
 
-
         <p class="pricing-note">
-
-            <strong>
-                Note:
-            </strong>
-            I'm currently focused on
-            <span class="highlight">building trust</span>
-
-            and strong
-            client relationships.
-            I'm happy to work at a
-
-            <span class="highlight-free">
-                very minimal cost
-
-            </span> <span style="font-style: italic;">(or even <strong>free</strong> in some cases)</span> to prove my
-            skills and
-            deliver value.
+            <strong>Note:</strong>
+            I'm currently focused on <span class="highlight">building trust</span> and strong client relationships.
+            I'm happy to work at a <span class="highlight-free">very minimal cost</span>
+            <span style="font-style: italic;">(or even <strong>free</strong> in some cases)</span> to prove my
+            skills and deliver value.
             <br><br>✨ Let's <span class="highlight">grow together</span>!
         </p>
-
-
     </section>
 
-
-
-    <!-- CONTACT SECTIONS -->
-
+    <!-- CONTACT SECTION -->
     <section class="contact" id="contact" data-aos="fade-up">
-
         <h2 class="section-title">Contact Me</h2>
-
         <p class="contact-text">Have a project in mind or just want to say hello? Fill out the form below!</p>
-
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xblydgar" method="POST">
-
             <input name="name" type="text" placeholder="Your Name" required>
-
             <input name="e-mail" type="email" placeholder="Your Email" required>
-
-            <input name="Mobile no." type="tel" placeholder=" Your Mobile no." required>
-
+            <input name="Mobile no." type="tel" placeholder="Your Mobile no." required>
             <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-
-            <input type="text" name="_gotcha" style="display:none"> <!-- spam protection -->
-
+            <input type="text" name="_gotcha" style="display:none">
             <button type="submit">Send Message</button>
-
-            <p id="formSuccess" style="display: none; color: #00ffee; margin-top: 1rem;"></p>
+            <p id="formSuccess" style="display: none; color: #e5e5e5; margin-top: 1rem;"></p>
         </form>
-
     </section>
 
-
-
-
-
-
-
-
-
-    <!-- FOOTER  -->
-
-    <footer class="footer ">
-
-        <p>&copy; 2025 Navneet. All rights reserved. </p>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Navneet. All rights reserved.</p>
         <div class="social-links">
-
             <a href="https://www.linkedin.com/in/navneet-verma-32b370312/" target="_blank"><i
                     class="fab fa-linkedin"></i></a>
-
-            <!-- <a href="https://github.com/NavneetVermaaa" target="_blank"><i class="fab fa-github"></i></a> -->
-
             <a href="https://instagram.com/ohh.navneet" target="_blank"><i class="fab fa-instagram"></i></a>
-
-            <!-- <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a> -->
-
-            <!-- WhatsApp Contact Link -->
             <a href="https://wa.me/919322962133?text=Hi%20Navneet!%20I'm%20interested%20in%20your%20web%20development%20services."
                 target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
-
         </div>
-
-
-
     </footer>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- JavaScript -->
-
-    <script src="script.js"></script>
-
-    <!-- AOS JS (FOR SCROLL ANIMATION) -->
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-
-        // AOS.init({
-        //     duration: 1000, // animation duration in ms
-        //     once: true      // animation happens only once
-
-        // });
-
-
-        AOS.init({
-            duration: 1000,
-            once: true,
-            easing: 'ease-in-out', // optional for smoothness
-        });
-
-    </script>
-
-
 </body>
 
-</html>
+
+
+<!-- AOS JS (FOR SCROLL ANIMATION) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+<script src="SCRIPT.JS"></script>
